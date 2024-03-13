@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[85px] px-[100px] flex justify-center items-center border-2 border-gray-200">
+    <nav className="w-full h-[85px] px-[100px] flex justify-center items-center">
       <div className="w-full flex justify-between">
         <div className="">
           <img src={logo} alt="logo" className="object-cover" />
@@ -25,10 +25,10 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex gap-8 justify-center items-center">
-            <button className="w-[160px] text-[18px] font-[gilroy-bold] border-2 border-[#FF7301] rounded-full px-[50] py-[7px] hover:bg-[#FF7301] hover:text-white transition-all duration-250 ease-in-out">
+            <button className="w-[160px] text-[16px] font-[gilroy-bold] border-2 border-[#FF7301] rounded-full px-[50] py-[5px] hover:bg-[#FF7301] hover:text-white transition-all duration-250 ease-in-out">
               Login
             </button>
-            <button className="w-[160px] text-[18px] font-[gilroy-bold] border-2 border-[#FF7301] bg-[#FF7301] text-white rounded-full px-[50] py-[7px] hover:bg-transparent hover:text-[#000] transition-all duration-250 ease-in-out">
+            <button className="w-[160px] text-[16px] font-[gilroy-bold] border-2 border-[#FF7301] bg-[#FF7301] text-white rounded-full px-[50] py-[5px] hover:bg-transparent hover:text-[#000] transition-all duration-250 ease-in-out">
               Book Demo
             </button>
           </div>
