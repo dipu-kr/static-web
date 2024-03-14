@@ -4,6 +4,7 @@ import HeroLeftComp from "../components/HeroLeftComp";
 import HeroRightComp from "../components/HeroRightComp";
 import LogoComp from "../components/LogoComp";
 import HomeMiddlePageComp from "../components/HomeMiddlePageComp";
+import HomeMiddlePageComp2 from "../components/HomeMiddlePageComp2";
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
         </div>
         <div>
           <HomeMiddlePageComp />
+        </div>
+        <div>
+          <HomeMiddlePageComp2 />
         </div>
       </div>
     </Layout>

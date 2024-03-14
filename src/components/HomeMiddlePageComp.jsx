@@ -35,7 +35,7 @@ const HomeMiddlePageComp = () => {
   ];
   return (
     <div className=" bg-white px-[100px]">
-      <div className="min-h-[90vh] h-auto py-4 flex flex-col justify-around">
+      <div className="min-h-[90vh] h-auto py-8 flex flex-col justify-around">
         <div className="text-center">
           <h6 className="text-[18px] uppercase text-[#092B59]">
             More than just a feature store
@@ -66,7 +66,7 @@ const HomeMiddlePageComp = () => {
               </div>
               <h4 className="text-[20px] font-bold relative">
                 <span>{item?.heading}</span>
-                <span className="absolute bottom-[6px] ml-[5px] text-[20px]">
+                <span className="absolute bottom-[14px] ml-[5px] text-[15px]">
                   <FaPlus />
                 </span>
               </h4>
