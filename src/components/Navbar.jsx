@@ -11,16 +11,16 @@ const Navbar = () => {
         </div>
         <div className="flex gap-[50px]">
           <ul className="flex gap-[50px] justify-center items-center">
-            <li className="list-none flex gap-1 items-center relative group font-[500] text-[18px] hover:text-[#FF7301] font-[gilroy-bold]">
+            <li className="list-none flex gap-1 items-center relative group text-[18px] hover:text-[#FF7301]">
               <span>Solution</span>
               <span>
                 <IoIosArrowDown />
               </span>
             </li>
-            <li className="list-none font-[500] text-[18px] hover:text-[#FF7301] font-[gilroy-bold]">
+            <li className="list-none text-[18px] hover:text-[#FF7301] ">
               Pricing
             </li>
-            <li className="list-none font-[500] text-[18px] hover:text-[#FF7301] font-[gilroy-bold]">
+            <li className="list-none text-[18px] hover:text-[#FF7301] ">
               Contact Us
             </li>
           </ul>

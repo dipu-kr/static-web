@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype");
+  font-weight: 800; /* Custom font-weight for ExtraBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-ExtraLight.otf") format("opentype");
+  font-weight: 200; /* Custom font-weight for ExtraLight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-Light.otf") format("opentype");
+  font-weight: 300; /* Custom font-weight for Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-Medium.otf") format("opentype");
+  font-weight: 500; /* Custom font-weight for Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("opentype");
+  font-weight: 600; /* Custom font-weight for SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis/Metropolis-Thin.otf") format("opentype");
+  font-weight: 100; /* Custom font-weight for Thin */
+  font-style: normal;
+}
