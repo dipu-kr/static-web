@@ -5,8 +5,25 @@ import user3 from "../assets/images/user3.svg";
 import aiml from "../assets/images/aiml.svg";
 
 const HomeMiddlePageComp2 = () => {
+  const data = [
+    {
+      id: 1,
+      icon: user1,
+      title: "Employees",
+    },
+    {
+      id: 1,
+      icon: user3,
+      title: "Human Resource",
+    },
+    {
+      id: 1,
+      icon: user2,
+      title: "Leader",
+    },
+  ];
   return (
-    <div className=" bg-[#F0F4F7] px-[100px]">
+    <div className="bg-[#F0F4F7] px-[100px]">
       <div className="min-h-[90vh] h-auto pb-4 pt-[70px] flex flex-col justify-center">
         <div className="text-center">
           <h6 className="text-[18px] uppercase text-[#FF7301]">
@@ -22,16 +39,18 @@ const HomeMiddlePageComp2 = () => {
         </div>
         <div>
           <div className="flex items-center justify-center gap-4 mt-5">
-            <img src={user1} alt="svg-icon" />
-            <img src={user3} alt="svg-icon" />
-            <img src={user2} alt="svg-icon" />
+            {data?.map((val) => (
+              <div
+                key={val?.id}
+                className="flex flex-col justify-center items-center gap-1"
+              >
+                <img src={val?.icon} alt="Icon" />
+                <span className="text-[13px]">{val?.title}</span>
+              </div>
+            ))}
           </div>
           <div className="flex justify-center items-center">
-            <img
-              src={aiml}
-              alt="svg-img"
-              className="w-[850px] object-conatin"
-            />
+            <img src={aiml} alt="svg-img" className=" object-conatin" />
           </div>
         </div>
       </div>

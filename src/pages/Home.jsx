@@ -5,6 +5,8 @@ import HeroRightComp from "../components/HeroRightComp";
 import LogoComp from "../components/LogoComp";
 import HomeMiddlePageComp from "../components/HomeMiddlePageComp";
 import HomeMiddlePageComp2 from "../components/HomeMiddlePageComp2";
+import HomeElevateComp from "../components/HomeElevateComp";
+import HomeElevateDetails from "../components/HomeElevateDetails";
 
 const Home = () => {
   return (
@@ -26,6 +28,12 @@ const Home = () => {
         </div>
         <div>
           <HomeMiddlePageComp2 />
+        </div>
+        <div>
+          <HomeElevateComp />
+        </div>
+        <div>
+          <HomeElevateDetails />
         </div>
       </div>
     </Layout>
