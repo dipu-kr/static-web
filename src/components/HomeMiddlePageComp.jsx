@@ -34,7 +34,7 @@ const HomeMiddlePageComp = () => {
     },
   ];
   return (
-    <div className=" bg-white px-[100px]">
+    <div className=" bg-white px-[150px]">
       <div className="min-h-[90vh] h-auto py-8 flex flex-col justify-around">
         <div className="text-center">
           <h6 className="text-[18px] uppercase text-[#092B59]">

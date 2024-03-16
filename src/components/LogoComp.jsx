@@ -5,7 +5,7 @@ import logo3 from "../assets/images/logo3.svg";
 
 const LogoComp = () => {
   return (
-    <div className="bg-[#F0F4F7] px-[100px]">
+    <div className="bg-[#F0F4F7] px-[150px]">
       <div className="h-[200px] flex flex-col justify-center items-center gap-5">
         <h5 className="tracking-wide text-[18px]">
           From the team who pioneered the first feature store at Uber, Tecton

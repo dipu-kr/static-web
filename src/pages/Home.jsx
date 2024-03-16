@@ -6,14 +6,16 @@ import LogoComp from "../components/LogoComp";
 import HomeMiddlePageComp from "../components/HomeMiddlePageComp";
 import HomeMiddlePageComp2 from "../components/HomeMiddlePageComp2";
 import HomeElevateComp from "../components/HomeElevateComp";
-import HomeElevateDetails from "../components/HomeElevateDetails";
+import HomeElevateNav from "../components/HomeElevateNav";
+import HomeWhyComp from "../components/HomeWhyComp";
+import CustomerStoriesComp from "../components/CustomerStoriesComp";
 
 const Home = () => {
   return (
     <Layout>
       <div className="h-auto">
         <div className="h-[85vh] flex">
-          <div className="ml-[100px] flex-1">
+          <div className="ml-[150px] flex-1">
             <HeroLeftComp />
           </div>
           <div className="flex-1">
@@ -33,7 +35,13 @@ const Home = () => {
           <HomeElevateComp />
         </div>
         <div>
-          <HomeElevateDetails />
+          <HomeElevateNav />
+        </div>
+        <div>
+          <HomeWhyComp />
+        </div>
+        <div>
+          <CustomerStoriesComp />
         </div>
       </div>
     </Layout>

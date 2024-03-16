@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[85px] px-[100px] flex justify-center items-center">
+    <nav className="w-full h-[85px] px-[150px] flex justify-center items-center">
       <div className="w-full flex justify-between">
         <div className="">
           <img src={logo} alt="logo" className="object-cover" />

@@ -23,7 +23,7 @@ const HomeMiddlePageComp2 = () => {
     },
   ];
   return (
-    <div className="bg-[#F0F4F7] px-[100px]">
+    <div className="bg-[#F0F4F7] px-[150px]">
       <div className="min-h-[90vh] h-auto pb-4 pt-[70px] flex flex-col justify-center">
         <div className="text-center">
           <h6 className="text-[18px] uppercase text-[#FF7301]">

@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeElevateComp = () => {
   return (
-    <div className="w-full px-[100px]">
+    <div className="w-full px-[150px]">
       <div className="flex flex-col justify-center items-center py-10">
         <h1 className="text-[30px] font-extrabold">
           Elevate Engagement with Inimble Extra Edge
