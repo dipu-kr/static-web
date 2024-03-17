@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/images/logo.svg";
 import { IoIosArrowDown } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,18 +12,29 @@ const Navbar = () => {
         </div>
         <div className="flex gap-[50px]">
           <ul className="flex gap-[50px] justify-center items-center">
-            <li className="list-none flex gap-1 items-center relative group text-[18px] hover:text-[#FF7301]">
-              <span>Solution</span>
-              <span>
-                <IoIosArrowDown />
-              </span>
-            </li>
-            <li className="list-none text-[18px] hover:text-[#FF7301] ">
-              Pricing
-            </li>
-            <li className="list-none text-[18px] hover:text-[#FF7301] ">
-              Contact Us
-            </li>
+            <NavLink
+              to="/solution"
+              style={({ isActive }) => ({
+                color: isActive ? "#FF7301" : "",
+              })}
+            >
+              <li className="list-none flex gap-1 items-center relative group text-[18px] hover:text-[#FF7301]">
+                <span>Solution</span>
+                <span>
+                  <IoIosArrowDown />
+                </span>
+              </li>
+            </NavLink>
+            <NavLink>
+              <li className="list-none text-[18px] hover:text-[#FF7301] ">
+                Pricing
+              </li>
+            </NavLink>
+            <NavLink>
+              <li className="list-none text-[18px] hover:text-[#FF7301] ">
+                Contact Us
+              </li>
+            </NavLink>
           </ul>
           <div className="flex gap-8 justify-center items-center">
             <button className="w-[160px] text-[16px] font-[gilroy-bold] border-2 border-[#FF7301] rounded-full px-[50] py-[5px] hover:bg-[#FF7301] hover:text-white transition-all duration-250 ease-in-out">

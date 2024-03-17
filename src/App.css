@@ -7,3 +7,12 @@
 body {
   font-family: "Metropolis";
 }
+
+.classBgImg {
+  width: 100%;
+  background-image: url("./assets/images/bgImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+}

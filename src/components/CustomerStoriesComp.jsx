@@ -5,7 +5,7 @@ const CustomerStoriesComp = () => {
   return (
     <div className="w-full px-[150px]">
       <div className="w-full h-[250px] my-8 bg-[#F0F4F7] rounded-full flex justify-center items-center flex-col">
-        <h5 className="text-[#FF7301] font-medium uppercase tracking-wide">
+        <h5 className="text-[#FF7301] font-medium uppercase tracking-wider">
           Customer Stories
         </h5>
         <h2 className="text-[20px] font-bold my-4">
