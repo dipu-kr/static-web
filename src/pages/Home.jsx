@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 import HeroLeftComp from "../components/HeroLeftComp";
 import HeroRightComp from "../components/HeroRightComp";
@@ -10,47 +10,46 @@ import HomeElevateNav from "../components/HomeElevateNav";
 import HomeWhyComp from "../components/HomeWhyComp";
 import CustomerStoriesComp from "../components/CustomerStoriesComp";
 import HomeFeatureComp from "../components/HomeFeatureComp";
-import HomeBottomComp from "../components/HomeBottomComp";
 
 const Home = () => {
+  // const [isElevateNavScrolled, setIsElevateNavScrolled] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const elevateNav = document.querySelector("#elevateNav");
+  //     if (elevateNav) {
+  //       const elevateNavTop = elevateNav.getBoundingClientRect().top;
+  //       console.log("scroll", elevateNavTop);
+  //       setIsElevateNavScrolled(elevateNavTop <= 0);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <Layout>
-      <div className="h-auto border">
-        <div className="min-h-[85vh] flex">
-          <div className="ml-[150px] flex-1">
+      <div className="h-auto">
+        <div className="flex items-center">
+          <div className="flex-1 ml-[150px]">
             <HeroLeftComp />
           </div>
           <div className="flex-1">
             <HeroRightComp />
           </div>
         </div>
-        <div>
-          <LogoComp />
-        </div>
-        <div>
-          <HomeMiddlePageComp />
-        </div>
-        <div>
-          <HomeMiddlePageComp2 />
-        </div>
-        <div>
-          <HomeElevateComp />
-        </div>
-        <div>
-          <HomeElevateNav />
-        </div>
-        <div>
-          <HomeWhyComp />
-        </div>
-        <div>
-          <CustomerStoriesComp />
-        </div>
-        <div>
-          <HomeFeatureComp />
-        </div>
-        <div>
-          <HomeBottomComp />
-        </div>
+        <LogoComp />
+        <HomeMiddlePageComp />
+        <HomeMiddlePageComp2 />
+        <HomeElevateComp />
+        <HomeElevateNav />
+        <HomeWhyComp />
+        <CustomerStoriesComp />
+        <HomeFeatureComp />
       </div>
     </Layout>
   );

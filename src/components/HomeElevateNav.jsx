@@ -7,16 +7,18 @@ import tab5 from "../assets/images/tab5.svg";
 import tab6 from "../assets/images/tab6.svg";
 import { HiPlus } from "react-icons/hi";
 
-import elevateEngage from "../assets/images/elevateEngage.svg";
-import elevateGrow from "../assets/images/elevateGrow.svg";
-import elevateMeet from "../assets/images/elevateMeet.svg";
-import elevateHealth from "../assets/images/elevateHealth.svg";
-import elevateRobo from "../assets/images/elevateRobo.svg";
-import elevateMarket from "../assets/images/elevateMarket.svg";
+// import test from "../assets/images/test.png";
+import test2 from "../assets/images/test2.jpg";
+import elevateEngage from "../assets/images/elevateEngage.jpg";
+import elevateGrow from "../assets/images/elevateGrow.jpg";
+import elevateMeet from "../assets/images/elevateMeet.jpg";
+import elevateHealth from "../assets/images/elevateHealth.jpg";
+import elevateRobo from "../assets/images/elevateRobo.jpg";
+import elevateMarket from "../assets/images/elevateMarket.jpg";
 
 import HomeElevateDetails from "./HomeElevateDetails";
 
-const HomeElevateNav = () => {
+const HomeElevateNav = ({ isElevateNavScrolled }) => {
   const data = [
     {
       id: 1,
@@ -97,7 +99,8 @@ const HomeElevateNav = () => {
   return (
     <div className="w-full px-[150px]">
       <div className="flex gap-8 mt-5">
-        <div className="w-[16%]">
+        {/* -------------tab- div------ */}
+        <div className={`w-[16%]`}>
           {data?.map((val) => (
             <div
               key={val?.id}
@@ -106,9 +109,9 @@ const HomeElevateNav = () => {
               <img
                 src={val?.icon}
                 alt="icon"
-                className="w-[33px] h-[33px] object-contain"
+                className="w-[38px] h-[38px] object-contain"
               />
-              <h4 className="flex font-bold">
+              <h4 className="flex text-[16px] font-[400]">
                 <span className="text-[14px]">{val?.title}</span>
                 <span>
                   <HiPlus />
@@ -117,6 +120,7 @@ const HomeElevateNav = () => {
             </div>
           ))}
         </div>
+        {/* -------------content div--------------- */}
         <div className="w-[82%]">
           <div>
             {elevateDetails?.map((val) => (

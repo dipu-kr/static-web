@@ -5,7 +5,6 @@ import KeyFeatureComp from "../components/solutionPageComponents/KeyFeatureComp"
 import PremiumFeature from "../components/solutionPageComponents/PremiumFeature";
 import SolutionRobo from "../components/solutionPageComponents/SolutionRobo";
 import SolutionMeet from "../components/solutionPageComponents/SolutionMeet";
-import HomeBottomComp from "../components/HomeBottomComp";
 
 const Solution = () => {
   return (
@@ -16,7 +15,6 @@ const Solution = () => {
         <PremiumFeature />
         <SolutionRobo />
         <SolutionMeet />
-        <HomeBottomComp />
       </div>
     </Layout>
   );

@@ -32,11 +32,15 @@ const HomeWhyComp = () => {
           <img src={whyImg} alt="Image" className="object-cover" />
         </div>
         <div className="w-[50%]">
-          <h3 className="text-[20px] font-bold mb-5">Why choose Inimble </h3>
+          <h3 className="text-[26px] font-[600] leading-[32px] mb-5">
+            Why choose Inimble{" "}
+          </h3>
           {data?.map((val) => (
             <div key={val?.id} className="flex gap-[6px] mb-5">
               <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
-              <p className="font-normal text-justify">{val?.para}</p>
+              <p className="text-[16px] leading-[25px] font-[400] text-justify">
+                {val?.para}
+              </p>
             </div>
           ))}
         </div>

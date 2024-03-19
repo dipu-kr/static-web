@@ -5,23 +5,23 @@ const CustomerStoriesComp = () => {
   return (
     <div className="w-full px-[150px]">
       <div className="w-full h-[250px] my-8 bg-[#F0F4F7] rounded-full flex justify-center items-center flex-col">
-        <h5 className="text-[#FF7301] font-medium uppercase tracking-wider">
+        <h5 className="text-[#FF7301] text-[18px] font-[700] leading-[20px] uppercase tracking-wider">
           Customer Stories
         </h5>
-        <h2 className="text-[20px] font-bold my-4">
+        <h2 className="text-[24px] font-[600] leading-[30px] my-4">
           Employee Engagement & Wellbeing
         </h2>
-        <p className="font-normal">
+        <p className="font-[400] text-[18px] leading-[30px] text-[#375069]">
           Hear Cash App’s journey through various generations of its core
           machine-learning capabilities{" "}
         </p>
-        <p className="font-normal">
+        <p className="font-[400] text-[18px] leading-[3opx] text-[#375069]">
           and how Tecton’s real-time feature platform helps them deliver
           world-class recommendations.
         </p>
-        <p className="flex items-center justify-center text-[13px] mt-2 text-[#FF7301]">
+        <p className="flex items-center justify-center font-[400] text-[16px] mt-2 text-[#FF7301] cursor-pointer">
           <span>Watch the Video</span>
-          <span>
+          <span className="ml-1">
             <HiArrowLongRight />
           </span>
         </p>

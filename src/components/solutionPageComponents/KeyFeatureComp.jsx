@@ -12,40 +12,47 @@ const KeyFeatureComp = () => {
 
   return (
     <div className="w-full px-[150px]">
-      <div className="flex justify-center items-center flex-col py-10">
+      <div className="flex justify-center items-center flex-col py-8">
         <div>
-          <h1 className="text-[35px] font-bold text-center">
+          <h1 className="text-[42px] font-[700] leading-[46px] text-[#092B59] text-center">
             Our Key Features
           </h1>
-          <p className="font-normal text-center mt-3">
+          <p className="font-[400] text-[22px] leading-[30px] text-[#375069] text-center mt-3">
             Deploy Tecton in your existing environment and immediately benefit
             from a central source of truth to
           </p>
-          <p className="font-normal text-center leading-4">
+          <p className="font-[400] text-[22px] leading-[30px] text-[#375069] text-center">
             design, orchestrate, and serve fresh features across the
             organization.
           </p>
         </div>
         <div className="w-[50%] flex justify-between mt-10">
           <button
-            className={`text-center py-1 px-5 text-[16px] font-bold border-b-2 border-white hover:bg-blue-100 ${
-              activeTab === 1 ? "text-blue-500 border-blue-500" : ""
+            className={`flex text-center py-1 px-5 text-[21px] font-[600] border-b-2  hover:text-[#1A73E8] ${
+              activeTab === 1
+                ? "text-[#1A73E8] border-[#1A73E8]"
+                : "border-white"
             }`}
             onClick={() => handleTabClick(1)}
           >
             Engage
+            <span>+</span>
           </button>
           <button
-            className={`text-center py-1 px-5 text-[16px] font-bold border-b-2 border-white hover:bg-blue-100 ${
-              activeTab === 2 ? "text-blue-500 border-blue-500" : ""
+            className={`text-center py-1 px-5 text-[21px] font-[600] border-b-2 hover:text-[#1A73E8] ${
+              activeTab === 2
+                ? "text-[#1A73E8] border-[#1A73E8]"
+                : "border-white"
             }`}
             onClick={() => handleTabClick(2)}
           >
             Grow
           </button>
           <button
-            className={`text-center py-1 px-5 text-[16px] font-bold border-b-2 border-white hover:bg-blue-100 ${
-              activeTab === 3 ? "text-blue-500 border-blue-500" : ""
+            className={`text-center py-1 px-5 text-[21px] font-[600] border-b-2 hover:text-[#1A73E8] ${
+              activeTab === 3
+                ? "text-[#1A73E8] border-[#1A73E8]"
+                : "border-white"
             }`}
             onClick={() => handleTabClick(3)}
           >

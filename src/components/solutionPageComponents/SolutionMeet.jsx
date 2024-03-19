@@ -43,19 +43,19 @@ const SolutionMeet = () => {
   return (
     <div className="w-full px-[150px]">
       <div className="flex justify-center items-center flex-col pt-[50px] pb-[80px]">
-        <div className="flex gap-8 mt-5">
-          <h1 className="flex text-[23px] font-bold">
-            <span>Meet</span>
+        <div className="flex gap-8 mb-[35px]">
+          <h1 className="flex">
+            <span className="text-[36px] font-[600] leading-[46px]">Meet</span>
             <span>
-              <FaPlus />
+              <FaPlus className="font-[600] text-[28px]" />
             </span>
           </h1>
-          <div className="font-normal">
+          <div className="font-[400] text-[24px] leading-[35px] text-[#000000]">
             <p>
               Empower your employees to thrive with Inimble Health's access to
               personalized sessions,
             </p>
-            <p>
+            <p className="font-[400] text-[24px] leading-[35px] text-[#000000]">
               expert consultations, and curated health packs. Dive into a wealth
               of healthand wellness{" "}
             </p>
@@ -64,8 +64,11 @@ const SolutionMeet = () => {
         <div className="w-[100%] flex justify-between mt-[65px]">
           {tabButtons?.map((val) => (
             <button
-              className={`text-center py-1 px-5 text-[16px] font-bold border-b-2 border-white hover:bg-blue-100 ${
-                activeTab === val?.tab ? "text-blue-500 border-blue-500" : ""
+              key={val?.id}
+              className={`text-center py-1 px-5 text-[21px] font-[600] leading-[30px] border-b-2 hover:text-[#1A73E8] ${
+                activeTab === val?.tab
+                  ? "text-blue-500 border-[#1A73E8]"
+                  : "border-white"
               }`}
               onClick={() => handleTabClick(val?.tab)}
             >

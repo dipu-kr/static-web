@@ -35,43 +35,49 @@ const HomeMiddlePageComp = () => {
   ];
   return (
     <div className=" bg-white px-[150px]">
-      <div className="min-h-[90vh] h-auto py-8 flex flex-col justify-around">
+      <div className=" h-auto py-[91px] flex flex-col justify-around">
         <div className="text-center">
-          <h6 className="text-[18px] uppercase text-[#092B59]">
+          <h6 className="text-[16.2px] font-[600] leading-[19.98px] uppercase text-[#092B59] mb-5">
             More than just a feature store
           </h6>
-          <h1 className="text-[30px] font-bold">
+          <h1 className="text-[38px] font-[600] text-[#000E21] leading-[46px]">
             Making Work Fun with Super Features
           </h1>
-          <h1 className="text-[30px] font-bold">for Super Teams</h1>
-          <p className="w-[68%] text-[17px] mx-auto text-[#4C4C4C] mt-3">
+          <h1 className="text-[38px] font-[600] text-[#000E21] leading-[46px]">
+            for Super Teams
+          </h1>
+          <p className="w-[70%] text-[24px] font-[400] leading-[35px] mx-auto text-[#4C4C4C] mt-3">
             Empower your workforce for an ever-changing landscape with TAVA's
             dynamic features. Adapt, evolve, and excel effortlessly. Streamline
             operations, harness insights, and craft engaging experiences.
             Welcome to the future of employee engagement.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-6 mt-[90px]">
           {data?.map((item) => (
             <div
               key={item?.id}
               className="flex-1 flex flex-col gap-4 justify-between items-center"
             >
-              <div className="w-[130px] h-[130px]">
+              <div className="w-[128px] h-[128px]">
                 <img
                   src={item?.img}
                   alt="svg-img"
                   className="w-full object-contain"
                 />
               </div>
-              <h4 className="text-[20px] font-bold relative">
-                <span>{item?.heading}</span>
-                <span className="absolute bottom-[14px] ml-[5px] text-[15px]">
-                  <FaPlus />
+              <h4>
+                <span className="text-[26px] font-[400] leading-[31.85px]">
+                  {item?.heading}
+                </span>
+                <span className="text-[45px] font-[400] leading-[55.13px]">
+                  +
                 </span>
               </h4>
-              <p className="text-center leading-4">{item?.para}</p>
-              <button className="bg-[#FF7301] text-white flex items-center gap-2 px-6 py-2 rounded">
+              <p className="text-center text-[16px] font-[400] text-[#000000] leading-[19.41px]">
+                {item?.para}
+              </p>
+              <button className="w-[180px] h-[42px] bg-[#FF7301] text-[16px] leading-[600] text-[#FFFFFF] flex items-center justify-center gap-1 rounded">
                 Learn More
                 <span>
                   <GoArrowRight />

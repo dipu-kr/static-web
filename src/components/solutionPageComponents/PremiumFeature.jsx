@@ -47,43 +47,48 @@ const PremiumFeature = () => {
   ];
   return (
     <div className="w-full px-[150px]">
-      <div className="flex justify-center items-center flex-col py-10">
+      <div className="flex justify-center items-center flex-col py-[100px]">
         <div>
-          <h1 className="text-[35px] font-bold text-center">
-            Our Key Features
+          <h1 className="text-[42px] font-[700] leading-[46px] text-center">
+            Our Premium Features
           </h1>
-          <p className="font-normal text-center mt-3">
+          <p className="font-[400] text-[22px] leading-[30px] text-center text-[#375069] mt-3">
             Deploy Tecton in your existing environment and immediately benefit
             from a central source of truth to
           </p>
-          <p className="font-normal text-center leading-4">
+          <p className="font-[400] text-[22px] leading-[30px] text-center text-[#375069]">
             design, orchestrate, and serve fresh features across the
             organization.
           </p>
         </div>
-        <div className="flex gap-8 mt-5">
-          <h1 className="flex text-[20px] font-bold">
-            <span>Health</span>
+        <div className="flex gap-8 mt-[63px]">
+          <h1 className="flex">
+            <span className="text-[36px] font-[600] leading-[46px]">
+              Health
+            </span>
             <span>
-              <FaPlus />
+              <FaPlus className="font-[600] text-[28px]" />
             </span>
           </h1>
-          <div className="font-normal">
+          <div className="font-[400] text-[24px] leading-[35px] text-[#000000]">
             <p>
               Empower your employees to thrive with Inimble Health's access to
               personalized sessions,
             </p>
-            <p>
+            <p className="font-[400] text-[24px] leading-[35px] text-[#000000]">
               expert consultations, and curated health packs. Dive into a wealth
               of healthand wellness{" "}
             </p>
           </div>
         </div>
-        <div className="w-[100%] flex justify-between mt-[65px]">
+        <div className="w-[100%] flex justify-between mt-[60px]">
           {tabButton?.map((val) => (
             <button
-              className={`text-center py-1 px-5 text-[16px] font-bold border-b-2 border-white hover:bg-blue-100 ${
-                activeTab === val?.tab ? "text-blue-500 border-blue-500" : ""
+              key={val?.id}
+              className={`text-center py-1 px-5 text-[21px] font-[600] leading-[30px] border-b-2 hover:text-[#1A73E8] ${
+                activeTab === val?.tab
+                  ? "text-blue-500 border-[#1A73E8]"
+                  : "border-white"
               }`}
               onClick={() => handleTabClick(val?.tab)}
             >

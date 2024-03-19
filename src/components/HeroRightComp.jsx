@@ -7,7 +7,7 @@ const HeroRightComp = () => {
       <img
         src={heroImg}
         alt="img"
-        className="bg-cover absolute bottom-[40px]"
+        className="bg-cover absolute bottom-[77px]"
       />
     </div>
   );

@@ -7,14 +7,14 @@ const LogoComp = () => {
   return (
     <div className="bg-[#F0F4F7] px-[150px]">
       <div className="h-[200px] flex flex-col justify-center items-center gap-5">
-        <h5 className="tracking-wide text-[18px]">
+        <h5 className=" text-[17px] font-[600] text-[#092B59] leading-[]28px">
           From the team who pioneered the first feature store at Uber, Tecton
           powers trillions of AI predictions, from startups to the Fortune 50.
         </h5>
         <div className="flex gap-10">
-          <img src={logo3} className="w-[130px] bg-contain" />
-          <img src={logo1} className="w-[70px] bg-contain aspect-square" />
-          <img src={logo2} className="w-[130px] bg-contain" />
+          <img src={logo3} className="w-[164px] bg-contain" />
+          <img src={logo1} className="w-[56px] bg-contain" />
+          <img src={logo2} className="w-[166px] bg-contain" />
         </div>
       </div>
     </div>

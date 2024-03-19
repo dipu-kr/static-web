@@ -23,14 +23,20 @@ const EngageComp = () => {
   ];
 
   return (
-    <div className="w-full px-[150px] bg-[#F0F4F7] rounded-md">
+    <div className="w-full px-[40px] bg-[#F0F4F7] rounded-md">
       <div className="w-full flex items-center justify-between gap-10 py-[70px]">
-        <div className="w-[45%]">
-          <img src={solutionEngageimg} alt="Image" className="object-cover" />
+        <div className="w-[50%]">
+          <img
+            src={solutionEngageimg}
+            alt="Image"
+            className="w-[600px] object-cover"
+          />
         </div>
-        <div className="w-[45%]">
-          <h3 className="text-[18px] font-bold mb-5 flex">
-            <span>Engage</span>
+        <div className="w-[50%]">
+          <h3 className="mb-5 flex">
+            <span className="flex text-[24px] font-[600] text-[#000000] leading-[30px]">
+              Engage
+            </span>
             <span>
               <FaPlus size={15} />
             </span>
@@ -41,7 +47,7 @@ const EngageComp = () => {
               className="flex justify-center items-center gap-[15px] mb-5"
             >
               <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
-              <p className="font-normal text-justify">{val?.para}</p>
+              <p className="font-[400] text-[16px] text-justify">{val?.para}</p>
             </div>
           ))}
         </div>
