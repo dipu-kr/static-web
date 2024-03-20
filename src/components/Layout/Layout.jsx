@@ -5,8 +5,8 @@ import Footer from "../../components/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="max-w-[1535px] mx-auto min-h-[100vh] h-auto">
-      <div className="h-[85px] relative">
+    <div className="w-full h-auto">
+      <div className="h-[87px] border border-red-500">
         <Navbar />
       </div>
       <div className="w-full h-auto">{children}</div>

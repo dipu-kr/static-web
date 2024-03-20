@@ -11,17 +11,19 @@ const Pricing = () => {
     <Layout>
       <div className="w-full min-h-[100vh] h-auto">
         <div className="w-full relative">
-          <div className="h-[350px] px-[150px] pt-[40px] bg-[#092B59]">
-            <h1 className="text-[25px] font-bold text-white leading-6">
-              Pricing & Plans
-            </h1>
-            <p className="text-[15px] font-normal text-white mb-5 ">
-              is your workplace helper. Here, Employee Engagement isn't just a
-              buzzword - ( Basic Feature description)
-            </p>
+          <div className="h-[350px] px-[150px] bg-[#092B59]">
+            <div className="pt-[60px] pl-[30px]">
+              <h1 className="text-[40px] font-[600] text-[#FCF6F5] leading-[49px]">
+                Pricing & Plans
+              </h1>
+              <p className="text-[18px] font-[400] leading-[30px] text-[#FCF6F5]">
+                is your workplace helper. Here, Employee Engagement isn't just a
+                buzzword - ( Basic Feature description)
+              </p>
+            </div>
           </div>
-          <div className="w-full h-[380px]"></div>
-          <div className="w-[80%] min-h-[300px] h-auto  absolute top-[100px] mx-auto left-0 right-0 z-10">
+          <div className="w-full h-[400px]"></div>
+          <div className="w-[80%] min-h-[300px] h-auto  absolute top-[165px] mx-auto left-0 right-0 z-10">
             <div className="w-full grid grid-cols-4 gap-8">
               <MicroPriceCard />
               <SmallPriceCard />
@@ -30,8 +32,8 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-auto pb-[80px]">
-          <div className="w-[80%] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-md mx-auto  p-8 z-10">
+        <div className="w-full h-auto pb-[90px]">
+          <div className="w-[80%] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-100 rounded-md mx-auto  p-8 z-10">
             <PricingQNA />
           </div>
         </div>

@@ -6,7 +6,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <nav className="w-full h-[87px] px-[150px] flex justify-center items-center fixed top-0 bg-white z-20">
+    <nav className="w-full h-[87px] sm:px-[40px] xl:px-[100px] 2xl:px-[150px] flex justify-center items-center fixed top-0 left-0 right-0 bg-white z-20">
       <div className="w-full flex justify-between">
         <NavLink to="/">
           <div className="w-[168.66px] h-[56.6px]">
@@ -18,30 +18,30 @@ const Navbar = () => {
             <NavLink
               to="/solution"
               style={({ isActive }) => ({
-                color: isActive ? "#FF7301" : "",
+                color: isActive ? "#FF7301" : "#000E21",
               })}
             >
-              <li className="list-none flex gap-1 items-center group font-[600] text-[16px] leading-[19.5px] text-[#000E21] hover:text-[#FF7301]">
+              <li className="list-none flex gap-1 items-center group font-[600] text-[16px] leading-[19.5px] hover:text-[#FF7301]">
                 <span>Solution</span>
-                <span>
+                {/* <span>
                   <IoIosArrowDown />
-                </span>
+                </span> */}
               </li>
             </NavLink>
             <NavLink
               to="/pricing"
               style={({ isActive }) => ({
-                color: isActive ? "#FF7301" : "",
+                color: isActive ? "#FF7301" : "#000E21",
               })}
             >
-              <li className="list-none font-[600] text-[16px] leading-[19.5px] text-[#000E21] hover:text-[#FF7301] ">
+              <li className="list-none font-[600] text-[16px] leading-[19.5px] hover:text-[#FF7301] ">
                 Pricing
               </li>
             </NavLink>
             <NavLink
               to="/contact"
               style={({ isActive }) => ({
-                color: isActive ? "#FF7301" : "",
+                color: isActive ? "#FF7301" : "#000E21",
               })}
             >
               <li className="list-none font-[600] text-[16px] leading-[19.5px] text-[#000E21] hover:text-[#FF7301] ">

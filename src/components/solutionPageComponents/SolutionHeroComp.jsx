@@ -4,7 +4,7 @@ import solutionheroimg from "../../assets/images/solutionheroimg.svg";
 const SolutionHeroComp = () => {
   return (
     <div className="w-full px-[150px]">
-      <div className="flex h-[85vh]  gap-10">
+      <div className="flex h-auto  gap-10 mb-[150px]">
         <div className="flex-1 mt-[142px]">
           <h1 className="text-[50px] font-[600] leading-[53px]">
             Real-Time ML Drives

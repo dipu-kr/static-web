@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="h-auto">
-        <div className="flex items-center">
+        <div className="h-auto flex items-center pb-[60px]">
           <div className="flex-1 ml-[150px]">
             <HeroLeftComp />
           </div>

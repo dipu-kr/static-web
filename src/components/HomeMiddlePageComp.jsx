@@ -4,7 +4,6 @@ import grow from "../assets/images/grow.svg";
 import meet from "../assets/images/meet.svg";
 import market from "../assets/images/market.svg";
 import { GoArrowRight } from "react-icons/go";
-import { FaPlus } from "react-icons/fa";
 
 const HomeMiddlePageComp = () => {
   const data = [
@@ -34,7 +33,7 @@ const HomeMiddlePageComp = () => {
     },
   ];
   return (
-    <div className=" bg-white px-[150px]">
+    <div className=" bg-white px-[150px] overflow-y-hidden">
       <div className=" h-auto py-[91px] flex flex-col justify-around">
         <div className="text-center">
           <h6 className="text-[16.2px] font-[600] leading-[19.98px] uppercase text-[#092B59] mb-5">
@@ -67,7 +66,7 @@ const HomeMiddlePageComp = () => {
                 />
               </div>
               <h4>
-                <span className="text-[26px] font-[400] leading-[31.85px]">
+                <span className="text-[26px] font-[600] leading-[31.85px]">
                   {item?.heading}
                 </span>
                 <span className="text-[45px] font-[400] leading-[55.13px]">

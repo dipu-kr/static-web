@@ -13,10 +13,10 @@ const BookDemoInfo = () => {
       <div className="w-full h-full bookDemoInfoBgImg rounded-r-md">
         <div className="h-full flex flex-col justify-around p-8">
           <div>
-            <h1 className="text-[18px] font-bold tracking-wide mb-3">
+            <h1 className="text-[34px] font-[600] text-[#F3F3F3] leading-[42px] tracking-wide pb-3">
               Heading Name
             </h1>
-            <p className="text-[15px] tracking-wide">
+            <p className="text-[24px] font-[400] text-[#F3F3F3] leading-[29px]">
               Get a chance to explore our exciting modules for free “Book Now”
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
@@ -25,18 +25,22 @@ const BookDemoInfo = () => {
 
           <div className="grid grid-cols-3 gap-8">
             <div>
-              <img src={tab4} className="w-[60px] object-cover" alt="Icon" />
+              <img src={tab4} className="w-[64px] object-cover" alt="Icon" />
               <p className="flex items-center gap-1">
-                <span>Engage</span>
+                <span className="text-[18px] font-[400] leading-[31px]">
+                  Engage
+                </span>
                 <span className="pb-2">
                   <HiPlus />
                 </span>
               </p>
             </div>
             <div className="flex justify-center items-center flex-col">
-              <img src={tab5} className="w-[60px] object-cover" alt="Icon" />
+              <img src={tab5} className="w-[64px] object-cover" alt="Icon" />
               <p className="flex items-center gap-1">
-                <span>Grow</span>
+                <span className="text-[18px] font-[400] leading-[31px]">
+                  Grow
+                </span>
                 <span className="pb-2">
                   <HiPlus />
                 </span>
@@ -44,28 +48,34 @@ const BookDemoInfo = () => {
             </div>
             <div className="flex items-end flex-col">
               <div className="mr-2">
-                <img src={tab2} className="w-[60px] object-cover" alt="Icon" />
+                <img src={tab2} className="w-[64px] object-cover" alt="Icon" />
               </div>
               <p className="flex items-center gap-1">
-                <span>Meet</span>
+                <span className="text-[18px] font-[400] leading-[31px]">
+                  Meet
+                </span>
                 <span className="pb-2">
                   <HiPlus />
                 </span>
               </p>
             </div>
-            <div>
-              <img src={tab3} className="w-[60px] object-cover" alt="Icon" />
+            <div className="flex flex-col gap-1">
+              <img src={tab3} className="w-[60px] h-[58px]" alt="Icon" />
               <p className="flex items-center gap-1">
-                <span>Health</span>
+                <span className="text-[18px] font-[400] leading-[31px]">
+                  Health
+                </span>
                 <span className="pb-2">
                   <HiPlus />
                 </span>
               </p>
             </div>
-            <div className="flex justify-start items-center flex-col">
+            <div className="flex justify-start items-center gap-1 flex-col">
               <img src={tab6} className="w-[60px] object-cover" alt="Icon" />
               <p className="flex items-center gap-1">
-                <span>Robo</span>
+                <span className="text-[18px] font-[400] leading-[31px]">
+                  Robo
+                </span>
                 <span className="pb-2">
                   <HiPlus />
                 </span>
@@ -73,10 +83,12 @@ const BookDemoInfo = () => {
             </div>
             <div className="flex items-end flex-col">
               <div className="mr-2">
-                <img src={tab1} className="w-[60px] object-cover" alt="Icon" />
+                <img src={tab1} className="w-[64px] object-cover" alt="Icon" />
               </div>
               <p className="flex items-center gap-1">
-                <span>Market</span>
+                <span className="text-[18px] font-[400] leading-[31px]">
+                  Market
+                </span>
                 <span className="pb-2">
                   <HiPlus />
                 </span>

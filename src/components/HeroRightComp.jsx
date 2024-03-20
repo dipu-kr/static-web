@@ -1,14 +1,10 @@
 import React from "react";
-import heroImg from "../assets/images/hero.svg";
+import heroImg from "../assets/images/homeimg.png";
 
 const HeroRightComp = () => {
   return (
-    <div className="h-[85vh] flex justify-end  relative">
-      <img
-        src={heroImg}
-        alt="img"
-        className="bg-cover absolute bottom-[77px]"
-      />
+    <div className=" flex justify-end">
+      <img src={heroImg} alt="img" className="w-[100%] bg-cover" />
     </div>
   );
 };

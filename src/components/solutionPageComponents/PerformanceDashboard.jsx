@@ -12,7 +12,11 @@ const PerformanceDashboard = ({ activeTab }) => {
       {activeTab === 1 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">
-            <img src={Frame} alt="Image" className="w-[600px] object-cover" />
+            <img
+              src={Frame}
+              alt="Image"
+              className="w-[600px] h-[350px] object-cover"
+            />
           </div>
           <div className="w-[50%]">
             <h3 className="text-[20px] font-[600] leading-[40px]">
@@ -30,7 +34,11 @@ const PerformanceDashboard = ({ activeTab }) => {
       {activeTab === 2 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">
-            <img src={Frame1} alt="Image" className="w-[600px] object-cover" />
+            <img
+              src={Frame1}
+              alt="Image"
+              className="w-[600px] h-[350px] object-cover"
+            />
           </div>
           <div className="w-[50%]">
             <h3 className="text-[20px] font-[600] leading-[40px]">
@@ -48,7 +56,11 @@ const PerformanceDashboard = ({ activeTab }) => {
       {activeTab === 3 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">
-            <img src={Frame2} alt="Image" className="w-[600] object-cover" />
+            <img
+              src={Frame2}
+              alt="Image"
+              className="w-[600] h-[350px] object-cover"
+            />
           </div>
           <div className="w-[50%]">
             <h3 className="text-[20px] font-[600] leading-[40px]">To-Dos</h3>
@@ -64,7 +76,11 @@ const PerformanceDashboard = ({ activeTab }) => {
       {activeTab === 4 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">
-            <img src={Frame3} alt="Image" className="w-[600px] object-cover" />
+            <img
+              src={Frame3}
+              alt="Image"
+              className="w-[600px] h-[350px] object-cover"
+            />
           </div>
           <div className="w-[50%]">
             <h3 className="text-[20px] font-[600] leading-[40px]">Meetings</h3>
@@ -80,7 +96,11 @@ const PerformanceDashboard = ({ activeTab }) => {
       {activeTab === 5 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">
-            <img src={Frame4} alt="Image" className="w-[600px] object-cover" />
+            <img
+              src={Frame4}
+              alt="Image"
+              className="w-[600px] h-[350px] object-cover"
+            />
           </div>
           <div className="w-[50%]">
             <h3 className="text-[20px] font-[600] leading-[40px]">
@@ -98,7 +118,11 @@ const PerformanceDashboard = ({ activeTab }) => {
       {activeTab === 6 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">
-            <img src={Frame5} alt="Image" className="w-[600px] object-cover" />
+            <img
+              src={Frame5}
+              alt="Image"
+              className="w-[600px] h-[350px] object-cover"
+            />
           </div>
           <div className="w-[50%]">
             <h3 className="text-[20px] font-[600] leading-[40px]">
