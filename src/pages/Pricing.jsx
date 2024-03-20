@@ -12,7 +12,7 @@ const Pricing = () => {
       <div className="w-full min-h-[100vh] h-auto">
         <div className="w-full relative">
           <div className="h-[350px] px-[150px] bg-[#092B59]">
-            <div className="pt-[60px] pl-[30px]">
+            <div className="w-full max-w-[1535px] mx-auto pt-[60px] pl-[30px]">
               <h1 className="text-[40px] font-[600] text-[#FCF6F5] leading-[49px]">
                 Pricing & Plans
               </h1>
@@ -22,8 +22,8 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[400px]"></div>
-          <div className="w-[80%] min-h-[300px] h-auto  absolute top-[165px] mx-auto left-0 right-0 z-10">
+          <div className="w-full max-w-[1535px] mx-auto h-[400px]"></div>
+          <div className="w-[80%] max-w-[1535px]  min-h-[300px] h-auto  absolute top-[165px] mx-auto left-0 right-0 z-10">
             <div className="w-full grid grid-cols-4 gap-8">
               <MicroPriceCard />
               <SmallPriceCard />
@@ -33,7 +33,7 @@ const Pricing = () => {
           </div>
         </div>
         <div className="w-full h-auto pb-[90px]">
-          <div className="w-[80%] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-100 rounded-md mx-auto  p-8 z-10">
+          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-100 rounded-md mx-auto  p-8 z-10">
             <PricingQNA />
           </div>
         </div>

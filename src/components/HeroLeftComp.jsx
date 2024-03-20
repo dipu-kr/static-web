@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const HeroLeftComp = () => {
   return (
-    <div className="flex pt-[85.92px]">
+    <div className="flex pt-[85.92px] px-4 lg:px-0">
       <div>
         <p className="flex mb-2 gap-4 text-[#092B59]">
           <span className="font-[600] text-[16.2px] leading-[19.98px]">

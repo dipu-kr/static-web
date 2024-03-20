@@ -12,30 +12,11 @@ import CustomerStoriesComp from "../components/CustomerStoriesComp";
 import HomeFeatureComp from "../components/HomeFeatureComp";
 
 const Home = () => {
-  // const [isElevateNavScrolled, setIsElevateNavScrolled] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const elevateNav = document.querySelector("#elevateNav");
-  //     if (elevateNav) {
-  //       const elevateNavTop = elevateNav.getBoundingClientRect().top;
-  //       console.log("scroll", elevateNavTop);
-  //       setIsElevateNavScrolled(elevateNavTop <= 0);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
     <Layout>
-      <div className="h-auto">
-        <div className="h-auto flex items-center pb-[60px]">
-          <div className="flex-1 ml-[150px]">
+      <div className="h-auto relative">
+        <div className="w-full max-w-[1535px] mx-auto h-auto flex flex-col-reverse lg:flex-row items-center pb-[60px]">
+          <div className="flex-1 lg:ml-[150px]">
             <HeroLeftComp />
           </div>
           <div className="flex-1">
