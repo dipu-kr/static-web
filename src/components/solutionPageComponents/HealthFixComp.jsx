@@ -3,7 +3,7 @@ import healthfix from "../../assets/images/healthfix.svg";
 
 const HealthFixComp = () => {
   return (
-    <div className="w-full min-h-[380px] px-[40px] bg-[#F0F4F7] rounded-md">
+    <div className="w-full min-h-[380px] px-[40px] bg-[#F0F4F7] rounded-[14px]">
       <div className="w-full flex items-center justify-between gap-10 py-[70px]">
         <div className="w-[50%]">
           <img src={healthfix} alt="Image" className="w-[600px] object-cover" />

@@ -12,7 +12,7 @@ const Pricing = () => {
       <div className="w-full min-h-[100vh] h-auto">
         <div className="w-full relative">
           <div className="h-[350px] px-[150px] bg-[#092B59]">
-            <div className="w-full max-w-[1535px] mx-auto pt-[60px] pl-[30px]">
+            <div className="w-full max-w-[1535px] mx-auto pt-[60px]">
               <h1 className="text-[40px] font-[600] text-[#FCF6F5] leading-[49px]">
                 Pricing & Plans
               </h1>
@@ -33,7 +33,7 @@ const Pricing = () => {
           </div>
         </div>
         <div className="w-full h-auto pb-[90px]">
-          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-100 rounded-md mx-auto  p-8 z-10">
+          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-[14px] mx-auto  p-8 z-10">
             <PricingQNA />
           </div>
         </div>

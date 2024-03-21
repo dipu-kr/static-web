@@ -5,7 +5,7 @@ import comparativeanalysis from "../../assets/images/comparativeanalysis.svg";
 
 const LanguageProficiency = ({ activeTab }) => {
   return (
-    <div className="w-full min-h-[380px] px-[40px] bg-[#F0F4F7] rounded-md">
+    <div className="w-full min-h-[380px] px-[40px] bg-[#F0F4F7] rounded-[14px]">
       {activeTab === 1 && (
         <div className="w-full flex items-center justify-between gap-10 py-[70px]">
           <div className="w-[50%]">

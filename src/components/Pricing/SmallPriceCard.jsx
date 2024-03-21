@@ -3,7 +3,7 @@ import { BsDot } from "react-icons/bs";
 
 const SmallPriceCard = () => {
   return (
-    <div className="min-h-[350px] h-auto bg-white shadow-lg rounded-md pb-[25px] overflow-hidden">
+    <div className="min-h-[350px] h-auto bg-white shadow-lg rounded-[14px] pb-[25px] overflow-hidden">
       <div className="bg-[#EAEAEA] text-[#092B59] tracking-wide p-6">
         <h1 className="text-[24px] font-[600] leading-[31px] uppercase">
           Small

@@ -22,7 +22,7 @@ const MarketComp = () => {
     },
   ];
   return (
-    <div className="w-full px-[40px] bg-[#F0F4F7] rounded-md">
+    <div className="w-full px-[40px] bg-[#F0F4F7] rounded-[14px]">
       <div className="w-full flex items-center justify-between gap-10 py-[70px]">
         <div className="w-[50%]">
           <img

@@ -20,13 +20,13 @@ const BookDemo = () => {
             </div>
           </div>
           <div className="w-full h-[530px]"></div>
-          <div className="w-[80%] max-w-[1535px]  min-h-[300px] h-auto flex shadow-lg rounded-md overflow-hidden  absolute top-[165px] mx-auto left-0 right-0  z-10">
+          <div className="w-[80%] max-w-[1535px]  min-h-[300px] h-auto flex shadow-lg overflow-hidden rounded-[14px]  absolute top-[165px] mx-auto left-0 right-0  z-10">
             <BookDemoForm />
             <BookDemoInfo />
           </div>
         </div>
         <div className="w-full h-auto pb-[90px]">
-          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-md mx-auto  p-8 z-10">
+          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-[14px] mx-auto  p-8 z-10">
             <BookDemoQNA />
           </div>
         </div>

@@ -47,8 +47,8 @@ const HomeMiddlePageComp = () => {
               for Super Teams
             </h1>
             <p className="w-[70%] text-[24px] font-[400] leading-[35px] mx-auto text-[#4C4C4C] mt-3">
-              Empower your workforce for an ever-changing landscape with TAVA's
-              dynamic features. Adapt, evolve, and excel effortlessly.
+              Empower your workforce for an ever-changing landscape with
+              Inimble's dynamic features. Adapt, evolve, and excel effortlessly.
               Streamline operations, harness insights, and craft engaging
               experiences. Welcome to the future of employee engagement.
             </p>

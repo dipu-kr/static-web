@@ -64,7 +64,7 @@ const SolutionMeet = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] flex justify-between mt-[65px]">
+          <div className="w-[100%] flex justify-between mt-[65px] px-[9px]">
             {tabButtons?.map((val) => (
               <button
                 key={val?.id}

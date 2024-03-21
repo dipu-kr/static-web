@@ -27,7 +27,7 @@ const HomeElevateDetails = ({ activeTab }) => {
       id: 3,
       title: "Meet",
       paragraph:
-        "With TAVA L10 Meeting App, streamline discussions, track goals, and resolve issues effectively to propel organizational progress. Simplify meeting planning using pre-defined templates and coordinate meetings effortlessly with intuitive scheduling. Measure success through real-time performance metrics, while setting clear objectives and tracking progress seamlessly.",
+        "With Inimble L10 Meeting App, streamline discussions, track goals, and resolve issues effectively to propel organizational progress. Simplify meeting planning using pre-defined templates and coordinate meetings effortlessly with intuitive scheduling. Measure success through real-time performance metrics, while setting clear objectives and tracking progress seamlessly.",
       image: elevateMeet,
     },
     {
@@ -41,14 +41,14 @@ const HomeElevateDetails = ({ activeTab }) => {
       id: 5,
       title: "Robo",
       paragraph:
-        "Harness advanced insights with TAVA Candidate Analyzer to effortlessly evaluate candidates' language proficiency, cultural fit, and communication skills. Assess fluency, pronunciation, and proficiency while aligning candidates seamlessly with organizational ethos. Gauge clarity, engagement, and articulation, thereby benchmarking candidates for informed decision-making.",
+        "Harness advanced insights with Inimble Candidate Analyzer to effortlessly evaluate candidates' language proficiency, cultural fit, and communication skills. Assess fluency, pronunciation, and proficiency while aligning candidates seamlessly with organizational ethos. Gauge clarity, engagement, and articulation, thereby benchmarking candidates for informed decision-making.",
       image: elevateRobo,
     },
     {
       id: 6,
       title: "Market",
       paragraph:
-        "Connect with trusted vendors, streamline event planning, and offer seamless services to your employees through the TAVA Vendor Marketplace. Showcase your skills and services effortlessly while opening doors to diverse event opportunities. Stay organized and never miss an event, enhancing event experiences through continuous feedback and improvement.",
+        "Connect with trusted vendors, streamline event planning, and offer seamless services to your employees through the Inimble Vendor Marketplace. Showcase your skills and services effortlessly while opening doors to diverse event opportunities. Stay organized and never miss an event, enhancing event experiences through continuous feedback and improvement.",
       image: elevateMarket,
     },
   ];

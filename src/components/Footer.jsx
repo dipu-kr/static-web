@@ -5,11 +5,33 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const duration = 1500;
+    const start = window.pageYOffset;
+    const startTime =
+      "now" in window.performance ? performance.now() : new Date().getTime();
+
+    const easeInOutQuad = (t, b, c, d) => {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
+    const scroll = () => {
+      const currentTime =
+        "now" in window.performance ? performance.now() : new Date().getTime();
+      const timeElapsed = currentTime - startTime;
+      window.scrollTo(0, easeInOutQuad(timeElapsed, start, -start, duration));
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scroll);
+      } else {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    scroll();
   };
+
   return (
     <div className="bg-[#1F1F1F]">
       <footer className="w-full max-w-[1535px] mx-auto min-h-[400px] h-auto px-[100px] py-10 flex justify-center items-center flex-col gap-10 bg-[#1F1F1F] text-white tracking-wide">
@@ -82,7 +104,7 @@ const Footer = () => {
         <div className="w-full flex justify-between items-center gap-10 flex-col">
           <div className="w-full flex justify-between">
             <p className="text-[14px] font-[600] leading-[20px]">
-              @2024 TAVA Technologies Pvt. Ltd. All right reserved
+              @2024 Inimble Technologies Pvt. Ltd. All right reserved
             </p>
             <p className="flex gap-6 text-[14px] font-[600] leading-[20px]">
               <span>Terms of service</span>
@@ -93,7 +115,7 @@ const Footer = () => {
           <div>
             <button
               onClick={scrollToTop}
-              className="text-[16px] font-[600] leading-[20px] hover:bg-gray-900 border-none px-6 py-[6px] rounded-md"
+              className="text-[16px] font-[600] leading-[20px] hover:bg-slate-900 border-none px-8 py-[9px] rounded-full"
             >
               Back to top
             </button>

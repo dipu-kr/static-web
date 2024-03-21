@@ -9,7 +9,7 @@ const HomeElevateComp = () => {
             Elevate Engagement with Inimble Extra Edge
           </h1>
           <p className="text-[22px] font-[400] leading-[33px] text-[#4C4C4C] mt-[16px]">
-            Explore TAVA's Add-Ons, crafted to turbocharge your engagement
+            Explore Inimble's Add-Ons, crafted to turbocharge your engagement
             efforts. From boosting
           </p>
           <p className="text-[22px] font-[400] leading-[33px] text-[#4C4C4C]">

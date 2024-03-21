@@ -2,7 +2,7 @@ import React from "react";
 
 const BookDemoForm = () => {
   return (
-    <div className="w-[50%] p-8 bg-white">
+    <div className="w-[50%] p-8 bg-[#ffffff]  rounded-l-[14px] overflow-hidden">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col">
           <label className="font-[400] text-[#000000] text-[18px] leading-[40px]">

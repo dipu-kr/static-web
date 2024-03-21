@@ -10,7 +10,7 @@ import { HiPlus } from "react-icons/hi";
 const BookDemoInfo = () => {
   return (
     <div className="w-[50%] text-white">
-      <div className="w-full h-full bookDemoInfoBgImg rounded-r-md">
+      <div className="w-full h-full bookDemoInfoBgImg rounded-r-[14px]">
         <div className="h-full flex flex-col justify-around p-8">
           <div>
             <h1 className="text-[34px] font-[600] text-[#F3F3F3] leading-[42px] tracking-wide pb-3">

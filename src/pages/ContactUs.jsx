@@ -20,13 +20,13 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="w-full h-[580px]"></div>
-          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white shadow-lg rounded-md  absolute top-[165px] mx-auto left-0 right-0 py-[50px] p-[30px] z-10">
+          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white shadow-lg rounded-[14px]  absolute top-[165px] mx-auto left-0 right-0 py-[50px] p-[30px] z-10">
             <ContactForm />
             <ContactInfo />
           </div>
         </div>
         <div className="w-full h-auto pb-[90px] mt-[90px]">
-          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-md mx-auto  p-8 z-10">
+          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-[14px] mx-auto  p-8 z-10">
             <QuestionsSection />
           </div>
         </div>

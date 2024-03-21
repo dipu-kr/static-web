@@ -47,7 +47,7 @@ const HomeElevateNav = () => {
       <div className="w-full max-w-[1535px] mx-auto px-[150px]">
         <div className="mt-5">
           {/* -------------tab- div------ */}
-          <div className="w-full  flex justify-between">
+          <div className="w-full  flex justify-between px-4">
             {tabList?.map((val) => (
               <button
                 key={val?.id}
@@ -66,7 +66,7 @@ const HomeElevateNav = () => {
             ))}
           </div>
           {/* -------------content div--------------- */}
-          <div className="w-[100%] bg-[#F0F4F7] border border-white rounded-md mb-5">
+          <div className="w-[100%] bg-[#F0F4F7] border border-white rounded-[14px] mb-5">
             <HomeElevateDetails activeTab={activeTab} />
           </div>
         </div>

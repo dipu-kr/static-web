@@ -82,7 +82,7 @@ const PremiumFeature = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] flex justify-between mt-[60px]">
+          <div className="w-[100%] flex justify-between mt-[60px] px-2">
             {tabButton?.map((val) => (
               <button
                 key={val?.id}
