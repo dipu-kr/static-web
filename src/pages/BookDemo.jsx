@@ -7,7 +7,7 @@ import BookDemoQNA from "../components/BookDemo/BookDemoQNA";
 const BookDemo = () => {
   return (
     <Layout>
-      <div className="w-full min-h-[100vh] h-auto">
+      <div className="w-full h-auto">
         <div className="w-full relative">
           <div className="h-[350px] px-[150px] pt-[40px] bg-[#092B59]">
             <div className="w-full max-w-[1535px] mx-auto">

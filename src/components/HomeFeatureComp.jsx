@@ -46,24 +46,24 @@ const HomeFeatureComp = () => {
     },
   ];
   return (
-    <div className="w-full bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[150px]">
-        <div className="w-full flex justify-center items-center flex-col pt-[100px] pb-[130px]">
-          <h5 className="text-[#FF7301] text-[18px] font-[700] uppercase tracking-wider">
+    <div className="w-full h-auto bg-[#ffffff]">
+      <div className="w-full max-w-[1535px] mx-auto px-[25px] lg:px-[150px]">
+        <div className="w-full flex justify-center items-center flex-col pt-[70px] lg:pt-[100px] pb-[70px] lg:pb-[130px]">
+          <h5 className="text-[#FF7301] text-[14px] lg:text-[18px] leading-[20px] font-[700] uppercase tracking-wider text-center mb-2 lg:mb-0">
             Battle tested for the enterprise
           </h5>
-          <h2 className="text-[38px] font-[600] leading-[46px]">
+          <h2 className="text-[24px] lg:text-[38px] font-[600] leading-[30px] lg:leading-[46px] text-center">
             Retain top talent with our exclusive{" "}
             <span className="text-[#FF7301]">personalized</span> features
           </h2>
-          <div className="grid grid-cols-2 gap-[80px] px-[50px] mt-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[80px] lg:px-[50px] mt-10">
             {dataList?.map((val) => (
               <div key={val?.id} className="w-full flex gap-5">
-                <div className="w-[80px] h-[80px]">
+                <div className="w-[130px] lg:w-[80px] h-[80px]">
                   <img src={val?.icon} alt={`Icon ${val?.id}`} />
                 </div>
                 <div>
-                  <h5 className="text-[20px] font-[400] leading-[26px] mb-2 text-[#000000]">
+                  <h5 className="text-[16px] lg:text-[20px] font-[500] leading-[20px] lg:leading-[26px] mb-2 text-[#000000]">
                     {val?.title}
                   </h5>
                   <p className="text-justify text-[14px] font-[400] text-[#7F7F7F]">

@@ -4,15 +4,15 @@ import { HiArrowLongRight } from "react-icons/hi2";
 const CustomerStoriesComp = () => {
   return (
     <div className="w-full bg-[#ffffff]">
-      <div className="w-[1535px] mx-auto px-[150px]">
-        <div className="w-full h-[250px] my-8 bg-[#F0F4F7] rounded-full flex justify-center items-center flex-col">
+      <div className="w-full max-w-[1535px] mx-auto lg:px-[150px]">
+        <div className="w-full h-auto lg:h-[270px] px-[30px] sm:px-[50px] text-center py-[30px] lg:my-8 bg-[#F0F4F7] lg:rounded-full flex justify-center items-center flex-col">
           <h5 className="text-[#FF7301] text-[18px] font-[700] leading-[20px] uppercase tracking-wider">
             Customer Stories
           </h5>
           <h2 className="text-[24px] font-[600] leading-[30px] my-4">
             Employee Engagement & Wellbeing
           </h2>
-          <p className="font-[400] text-[18px] leading-[30px] text-[#375069]">
+          <p className="font-[400] text-[18px] leading-[30px] text-[#375069] break-words">
             Hear Cash App’s journey through various generations of its core
             machine-learning capabilities{" "}
           </p>

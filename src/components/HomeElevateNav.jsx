@@ -44,10 +44,10 @@ const HomeElevateNav = () => {
 
   return (
     <div className="w-full  bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[150px]">
+      <div className="w-full max-w-[1535px] mx-auto px-[25px] lg:px-[150px]">
         <div className="mt-5">
           {/* -------------tab- div------ */}
-          <div className="w-full  flex justify-between px-4">
+          <div className="w-full lg:flex justify-between px-4 hidden lg:block">
             {tabList?.map((val) => (
               <button
                 key={val?.id}

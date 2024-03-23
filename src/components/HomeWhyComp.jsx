@@ -27,12 +27,12 @@ const HomeWhyComp = () => {
   ];
   return (
     <div className="w-full bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[150px]">
-        <div className="w-full flex items-center justify-between py-8">
-          <div className="w-[50%]">
+      <div className="w-full max-w-[1535px] mx-auto px-[25px] lg:px-[150px]">
+        <div className="w-full flex items-center justify-between flex-col-reverse lg:flex-row  py-8">
+          <div className="w-full lg:w-[50%] flex justify-center">
             <img src={whyImg} alt="Image" className="object-cover" />
           </div>
-          <div className="w-[50%]">
+          <div className="w-full lg:w-[50%]">
             <h3 className="text-[26px] font-[600] leading-[32px] mb-5">
               Why choose Inimble{" "}
             </h3>

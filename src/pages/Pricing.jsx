@@ -9,22 +9,22 @@ import LargePriceCard from "../components/Pricing/LargePriceCard";
 const Pricing = () => {
   return (
     <Layout>
-      <div className="w-full min-h-[100vh] h-auto">
+      <div className="w-full h-auto">
         <div className="w-full relative">
-          <div className="h-[350px] px-[150px] bg-[#092B59]">
-            <div className="w-full max-w-[1535px] mx-auto pt-[60px]">
-              <h1 className="text-[40px] font-[600] text-[#FCF6F5] leading-[49px]">
+          <div className="h-[430px] sm:h-[375px] lg:h-[350px] px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px] bg-[#092B59]">
+            <div className="w-full max-w-[1535px] mx-auto pt-[40px] lg:pt-[60px]">
+              <h1 className="text-[24px] lg:text-[40px] font-[600] text-[#FCF6F5] leading-[49px]">
                 Pricing & Plans
               </h1>
-              <p className="text-[18px] font-[400] leading-[30px] text-[#FCF6F5]">
+              <p className="text-[16px] lg:text-[18px] font-[400] leading-[25px] lg:leading-[30px] text-[#FCF6F5]">
                 is your workplace helper. Here, Employee Engagement isn't just a
                 buzzword - ( Basic Feature description)
               </p>
             </div>
           </div>
-          <div className="w-full max-w-[1535px] mx-auto h-[400px]"></div>
-          <div className="w-[80%] max-w-[1535px]  min-h-[300px] h-auto  absolute top-[165px] mx-auto left-0 right-0 z-10">
-            <div className="w-full grid grid-cols-4 gap-8">
+          <div className="w-full max-w-[1535px] mx-auto h-[1900px] sm:h-[900px] xl:h-[400px]"></div>
+          <div className=" w-[90%] lg:w-[80%] max-w-[1535px]  min-h-[300px] h-auto  absolute top-[230px] sm:top-[210px] lg:top-[195px] xl:top-[165px] mx-auto left-0 right-0 z-10">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
               <MicroPriceCard />
               <SmallPriceCard />
               <MediumPriceCard />
@@ -33,7 +33,7 @@ const Pricing = () => {
           </div>
         </div>
         <div className="w-full h-auto pb-[90px]">
-          <div className="w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white border border-gray-200 rounded-[14px] mx-auto  p-8 z-10">
+          <div className="w-[90%] lg:w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white lg:border border-gray-200 rounded-[14px] mx-auto py-[20px] lg:p-8 z-10">
             <PricingQNA />
           </div>
         </div>
