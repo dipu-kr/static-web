@@ -44,29 +44,32 @@ const HomeElevateNav = () => {
 
   return (
     <div className="w-full  bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[25px] lg:px-[150px]">
+      <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="mt-5">
           {/* -------------tab- div------ */}
-          <div className="w-full lg:flex justify-between px-4 hidden lg:block">
-            {tabList?.map((val) => (
-              <button
-                key={val?.id}
-                className={`flex text-center py-1 text-[21px] font-[600] leading-[30px] border-b-2 hover:text-[#1A73E8] ${
-                  activeTab === val?.tab
-                    ? "text-blue-500 border-[#1A73E8]"
-                    : "border-white"
-                }`}
-                onClick={() => handleTabClick(val?.tab)}
-              >
-                <span className="text-[22px] font-[600]">{val?.title}</span>
-                <span className="text-[22px] font-[600]">
-                  <HiPlus />
-                </span>
-              </button>
-            ))}
+          <div className="hidden lg:block">
+            <div className="w-full flex justify-between px-4">
+              {tabList?.map((val) => (
+                <button
+                  key={val?.id}
+                  className={`flex text-center py-1 text-[21px] font-[600] leading-[30px] border-b-2 hover:text-[#1A73E8] ${
+                    activeTab === val?.tab
+                      ? "text-blue-500 border-[#1A73E8]"
+                      : "border-white"
+                  }`}
+                  onClick={() => handleTabClick(val?.tab)}
+                >
+                  <span className="text-[22px] font-[600]">{val?.title}</span>
+                  <span className="text-[22px] font-[600]">
+                    <HiPlus />
+                  </span>
+                </button>
+              ))}
+            </div>
           </div>
+
           {/* -------------content div--------------- */}
-          <div className="w-[100%] bg-[#F0F4F7] border border-white rounded-[14px] mb-5">
+          <div className="w-[100%] lg:bg-[#F0F4F7] border border-white rounded-[14px] lg:mb-5">
             <HomeElevateDetails activeTab={activeTab} />
           </div>
         </div>

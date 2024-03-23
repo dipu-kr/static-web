@@ -27,7 +27,7 @@ const HomeWhyComp = () => {
   ];
   return (
     <div className="w-full bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[25px] lg:px-[150px]">
+      <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="w-full flex items-center justify-between flex-col-reverse lg:flex-row  py-8">
           <div className="w-full lg:w-[50%] flex justify-center">
             <img src={whyImg} alt="Image" className="object-cover" />

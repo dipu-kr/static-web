@@ -24,16 +24,16 @@ const HomeMiddlePageComp2 = () => {
   ];
   return (
     <div className="w-full bg-[#F0F4F7]">
-      <div className="w-full max-w-[1535px] mx-auto px-[150px]">
-        <div className="pt-[110px] h-auto pb-4  flex flex-col justify-center">
+      <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
+        <div className="pt-[35px] lg:pt-[110px] h-auto pb-4  flex flex-col justify-center">
           <div className="text-center">
-            <h6 className="text-[18px] font-[700] leading-[19.98px] uppercase text-[#FF7301]">
+            <h6 className="text-[15px] lg:text-[18px] font-[700] leading-[19.98px] uppercase text-[#FF7301] mb-2 lg:mb-0">
               A complete platform
             </h6>
-            <h1 className="text-[36px] font-[600] text-[#022638] leading-[43.92px]">
+            <h1 className="text-[24px] lg:text-[36px] font-[600] text-[#022638] leading-[30px] lg:leading-[43.92px]">
               Design and Manage the Entire ML Feature Lifecycle
             </h1>
-            <p className="text-[18px] font-[400] text-[#022638] leading-[34.2px] mt-[10px]">
+            <p className="text-[16px] lg:text-[18px] font-[400] text-[#022638] leading-[26px] lg:leading-[34.2px] mt-[10px]">
               From simple declarative transformation logic to fresh feature
               values you can store, serve, and monitor, all in real-time.
             </p>

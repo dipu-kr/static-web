@@ -47,7 +47,7 @@ const HomeFeatureComp = () => {
   ];
   return (
     <div className="w-full h-auto bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[25px] lg:px-[150px]">
+      <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="w-full flex justify-center items-center flex-col pt-[70px] lg:pt-[100px] pb-[70px] lg:pb-[130px]">
           <h5 className="text-[#FF7301] text-[14px] lg:text-[18px] leading-[20px] font-[700] uppercase tracking-wider text-center mb-2 lg:mb-0">
             Battle tested for the enterprise

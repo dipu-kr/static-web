@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <Layout>
       <div className="h-auto relative">
-        {/* <HeroSection /> */}
-        {/* <LogoComp /> */}
-        {/* <HomeMiddlePageComp /> */}
-        {/* <HomeMiddlePageComp2 /> */}
-        {/* <HomeElevateComp /> */}
+        <HeroSection />
+        <LogoComp />
+        <HomeMiddlePageComp />
+        <HomeMiddlePageComp2 />
+        <HomeElevateComp />
         <HomeElevateNav />
         <HomeWhyComp />
         <CustomerStoriesComp />

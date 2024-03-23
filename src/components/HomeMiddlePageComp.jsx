@@ -34,32 +34,32 @@ const HomeMiddlePageComp = () => {
   ];
   return (
     <div className="w-full bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[150px] overflow-y-hidden">
-        <div className=" h-auto py-[91px] flex flex-col justify-around">
+      <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px] overflow-y-hidden">
+        <div className=" h-auto py-[40px] lg:py-[91px] flex flex-col justify-around">
           <div className="text-center">
-            <h6 className="text-[16.2px] font-[600] leading-[19.98px] uppercase text-[#092B59] mb-5">
+            <h6 className="text-[15px] lg:text-[16.2px] font-[600] leading-[19.98px] uppercase text-[#092B59] mb-5">
               More than just a feature store
             </h6>
-            <h1 className="text-[38px] font-[600] text-[#000E21] leading-[46px]">
+            <h1 className="text-[24px] lg:text-[38px] font-[600] text-[#000E21] leading-[30px] lg:leading-[46px]">
               Making Work Fun with Super Features
             </h1>
-            <h1 className="text-[38px] font-[600] text-[#000E21] leading-[46px]">
+            <h1 className="text-[24px] lg:text-[38px] font-[600] text-[#000E21] leading-[30px] lg:leading-[46px]">
               for Super Teams
             </h1>
-            <p className="w-[70%] text-[24px] font-[400] leading-[35px] mx-auto text-[#4C4C4C] mt-3">
+            <p className="w-[100%] lg:w-[85%] xl:w-[70%] text-[16px] lg:text-[24px] font-[400] leading-[26px] lg:leading-[35px] mx-auto text-[#4C4C4C] mt-3">
               Empower your workforce for an ever-changing landscape with
               Inimble's dynamic features. Adapt, evolve, and excel effortlessly.
               Streamline operations, harness insights, and craft engaging
               experiences. Welcome to the future of employee engagement.
             </p>
           </div>
-          <div className="flex gap-6 mt-[90px]">
+          <div className="flex flex-wrap gap-6 mt-[50px] lg:mt-[90px]">
             {data?.map((item) => (
               <div
                 key={item?.id}
                 className="flex-1 flex flex-col gap-4 justify-between items-center"
               >
-                <div className="w-[128px] h-[128px]">
+                <div className="w-[110px] h-[110px] lg:w-[128px] lg:h-[128px]">
                   <img
                     src={item?.img}
                     alt="svg-img"
@@ -67,7 +67,7 @@ const HomeMiddlePageComp = () => {
                   />
                 </div>
                 <h4>
-                  <span className="text-[26px] font-[600] leading-[31.85px]">
+                  <span className="text-[24px] lg:text-[26px] font-[600] leading-[31.85px]">
                     {item?.heading}
                   </span>
                   <span className="text-[45px] font-[400] leading-[55.13px]">

@@ -4,7 +4,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 const CustomerStoriesComp = () => {
   return (
     <div className="w-full bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto lg:px-[150px]">
+      <div className="w-full max-w-[1535px] mx-auto lg:px-[100px] xl:px-[150px]">
         <div className="w-full h-auto lg:h-[270px] px-[30px] sm:px-[50px] text-center py-[30px] lg:my-8 bg-[#F0F4F7] lg:rounded-full flex justify-center items-center flex-col">
           <h5 className="text-[#FF7301] text-[18px] font-[700] leading-[20px] uppercase tracking-wider">
             Customer Stories
