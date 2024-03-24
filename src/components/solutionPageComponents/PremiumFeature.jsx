@@ -134,7 +134,7 @@ const PremiumFeature = () => {
             {activeTab === 6 && <HealthPacks />}
           </div>
           {/* ------------for mobile and tab screen----------- */}
-          <div className="w-full h-auto transition-all duration-600 ease-linear flex flex-col gap-[30px] lg:hidden">
+          <div className="w-full h-auto transition-all duration-600 ease-linear flex flex-col lg:hidden">
             <HealthDashboard />
             <HealthFixComp />
             <ConnsultationComp />

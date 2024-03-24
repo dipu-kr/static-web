@@ -31,51 +31,53 @@ const MarketComp = () => {
     });
   }, []);
   return (
-    <div className="w-full px-[12px] lg:px-[40px] bg-[#F0F4F7] rounded-[14px]">
-      <div
-        className="w-full flex items-center justify-between flex-col lg:flex-row gap-5 lg:gap-10 py-[20px] lg:py-[70px]"
-        data-aos="zoom-in-up"
-      >
-        <div className="w-full lg:w-[50%]">
-          <div className="lg:hidden">
-            <h3 className="flex">
-              <span className="flex text-[22px] font-[600] text-[#000000] leading-[30px] border-b-2 border-blue-500">
+    <>
+      <div className="lg:hidden pt-[25px]">
+        <h3 className="flex pl-3">
+          <span className="flex text-[22px] font-[600] text-[#1A73E8] leading-[30px] border-b-2 border-[#1A73E8]">
+            Market
+          </span>
+          <span>
+            <FaPlus size={15} className="text-[#1A73E8]" />
+          </span>
+        </h3>
+      </div>
+      <div className="w-full px-[12px] lg:px-[40px] bg-[#F0F4F7] rounded-[14px]">
+        <div
+          className="w-full flex items-center justify-between flex-col lg:flex-row gap-5 lg:gap-10 py-[20px] lg:py-[70px]"
+          data-aos="zoom-in-up"
+        >
+          <div className="w-full lg:w-[50%]">
+            <img
+              src={solutionMarketimg}
+              alt="Image"
+              className="w-full lg:w-[600px] object-cover"
+            />
+          </div>
+          <div className="w-full lg:w-[50%]">
+            <h3 className="flex mb-5">
+              <span className="text-[22px] lg:text-[24px] font-[600] text-[#000000] leading-[30px]">
                 Market
               </span>
               <span>
                 <FaPlus size={15} />
               </span>
             </h3>
+            {data?.map((val) => (
+              <div
+                key={val?.id}
+                className="flex justify-center items-center gap-[15px] mb-5"
+              >
+                <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
+                <p className="font-[400] text-[14px] lg:text-[16px] text-justify">
+                  {val?.para}
+                </p>
+              </div>
+            ))}
           </div>
-          <img
-            src={solutionMarketimg}
-            alt="Image"
-            className="w-full lg:w-[600px] object-cover"
-          />
-        </div>
-        <div className="w-full lg:w-[50%]">
-          <h3 className="flex mb-5">
-            <span className="text-[22px] lg:text-[24px] font-[600] text-[#000000] leading-[30px]">
-              Market
-            </span>
-            <span>
-              <FaPlus size={15} />
-            </span>
-          </h3>
-          {data?.map((val) => (
-            <div
-              key={val?.id}
-              className="flex justify-center items-center gap-[15px] mb-5"
-            >
-              <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
-              <p className="font-[400] text-[14px] lg:text-[16px] text-justify">
-                {val?.para}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
