@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import engage from "../assets/images/engage.svg";
 import grow from "../assets/images/grow.svg";
 import meet from "../assets/images/meet.svg";
 import market from "../assets/images/market.svg";
 import { GoArrowRight } from "react-icons/go";
+import AOS from "aos";
 
 const HomeMiddlePageComp = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   const data = [
     {
       id: 1,
@@ -36,7 +44,7 @@ const HomeMiddlePageComp = () => {
     <div className="w-full bg-[#ffffff]">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px] overflow-y-hidden">
         <div className=" h-auto py-[40px] lg:py-[91px] flex flex-col justify-around">
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-up">
             <h6 className="text-[15px] lg:text-[16.2px] font-[600] leading-[19.98px] uppercase text-[#092B59] mb-5">
               More than just a feature store
             </h6>
@@ -58,6 +66,7 @@ const HomeMiddlePageComp = () => {
               <div
                 key={item?.id}
                 className="flex-1 flex flex-col gap-4 justify-between items-center"
+                data-aos="fade-up"
               >
                 <div className="w-[110px] h-[110px] lg:w-[128px] lg:h-[128px]">
                   <img

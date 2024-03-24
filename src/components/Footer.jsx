@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[#1F1F1F]">
-      <footer className="w-full max-w-[1535px] mx-auto min-h-[400px] h-auto px-[20px] sm:px-[30px] lg:px-[50px] xl:px-[100px] py-10 flex justify-center items-center flex-col gap-10 bg-[#1F1F1F] text-white tracking-wide">
+      <footer className="w-full max-w-[1535px] mx-auto min-h-[400px] h-auto px-[12px] sm:px-[30px] lg:px-[50px] xl:px-[100px] py-10 flex justify-center items-center flex-col gap-10 bg-[#1F1F1F] text-white tracking-wide">
         <div className=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-6 px-4 md:px-6 lg:px-0">
           <div className="flex flex-col">
             <h6 className="font-[600] text-[16px] leading-[20px]">
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full flex justify-between items-center gap-10 flex-col">
-          <div className="w-full flex flex-col md:flex-row gap-5 lg:gap-0 sm:justify-between px-4 md:px-6 lg:px-0 text-center">
+          <div className="w-full flex flex-col md:flex-row gap-5 lg:gap-0 sm:justify-between  md:px-6 lg:px-0 text-center">
             <p className="text-[11px] leading-[14px] lg:text-[14px] font-[600] lg:leading-[20px]">
               @2024 Inimble Technologies Pvt. Ltd. All right reserved
             </p>

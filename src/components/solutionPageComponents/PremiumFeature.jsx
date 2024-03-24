@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HealthDashboard from "./HealthDashboard";
 import HealthFixComp from "./HealthFixComp";
 import ConnsultationComp from "./ConnsultationComp";
@@ -6,6 +6,7 @@ import SafeSpaceComp from "./SafeSpaceComp";
 import OfflineActivity from "./OfflineActivity";
 import HealthPacks from "./HealthPacks";
 import { FaPlus } from "react-icons/fa";
+import AOS from "aos";
 
 const PremiumFeature = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -45,66 +46,101 @@ const PremiumFeature = () => {
       title: "Health Packs",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 450,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
+
   return (
     <div className="w-full bg-[#ffffff]">
-      <div className="w-full max-w-[1535px] mx-auto px-[150px]">
-        <div className="flex justify-center items-center flex-col py-[100px]">
+      <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
+        <div className="flex justify-center items-center flex-col py-[32px] lg:py-[100px]">
           <div>
-            <h1 className="text-[42px] font-[700] leading-[46px] text-center">
+            <h1
+              className="text-[26px] lg:text-[42px] font-[700] leading-[46px] text-center"
+              data-aos="fade-up"
+            >
               Our Premium Features
             </h1>
-            <p className="font-[400] text-[22px] leading-[30px] text-center text-[#375069] mt-3">
+            <p
+              className="font-[400] text-[16px] lg:text-[22px] leading-[24px] lg:leading-[30px] text-center text-[#375069] mt-3"
+              data-aos="fade-up"
+            >
               Deploy Tecton in your existing environment and immediately benefit
               from a central source of truth to
             </p>
-            <p className="font-[400] text-[22px] leading-[30px] text-center text-[#375069]">
+            <p
+              className="font-[400] text-[16px] lg:text-[22px] leading-[24px] lg:leading-[30px] text-center text-[#375069]"
+              data-aos="fade-up"
+            >
               design, orchestrate, and serve fresh features across the
               organization.
             </p>
           </div>
-          <div className="flex gap-8 mt-[63px]">
+          <div
+            className="flex gap-2 lg:gap-8 mt-[40px] lg:mt-[63px] mb-[30px] lg:mb-0 flex-col lg:flex-row"
+            data-aos="fade-up"
+          >
             <h1 className="flex">
-              <span className="text-[36px] font-[600] leading-[46px]">
+              <span className="text-[26px] lg:text-[36px] font-[600] leading-[46px]">
                 Health
               </span>
               <span>
-                <FaPlus className="font-[600] text-[28px]" />
+                <FaPlus className="font-[600] text-[21px] lg:text-[28px]" />
               </span>
             </h1>
-            <div className="font-[400] text-[24px] leading-[35px] text-[#000000]">
+            <div className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
               <p>
                 Empower your employees to thrive with Inimble Health's access to
                 personalized sessions,
               </p>
-              <p className="font-[400] text-[24px] leading-[35px] text-[#000000]">
+              <p className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
                 expert consultations, and curated health packs. Dive into a
                 wealth of healthand wellness{" "}
               </p>
             </div>
           </div>
-          <div className="w-[100%] flex justify-between mt-[60px] px-2">
-            {tabButton?.map((val) => (
-              <button
-                key={val?.id}
-                className={`text-center py-1 px-5 text-[21px] font-[600] leading-[30px] border-b-2 hover:text-[#1A73E8] ${
-                  activeTab === val?.tab
-                    ? "text-blue-500 border-[#1A73E8]"
-                    : "border-white"
-                }`}
-                onClick={() => handleTabClick(val?.tab)}
-              >
-                {val?.title}
-              </button>
-            ))}
+          <div className="w-full hidden lg:block" data-aos="fade-up">
+            <div className="w-[100%] flex justify-between mt-[60px] px-2">
+              {tabButton?.map((val) => (
+                <button
+                  key={val?.id}
+                  className={`text-center py-1 px-5 text-[21px] font-[600] leading-[24px] border-b-2 hover:text-[#1A73E8] ${
+                    activeTab === val?.tab
+                      ? "text-blue-500 border-[#1A73E8]"
+                      : "border-white"
+                  }`}
+                  onClick={() => handleTabClick(val?.tab)}
+                >
+                  {val?.title}
+                </button>
+              ))}
+            </div>
           </div>
           {/* -----------------components------------ */}
-          <div className="w-full h-auto transition-all duration-600 ease-linear">
+          <div
+            className="w-full h-auto transition-all duration-600 ease-linear hidden lg:block"
+            data-aos="fade-up"
+          >
             {activeTab === 1 && <HealthDashboard />}
             {activeTab === 2 && <HealthFixComp />}
             {activeTab === 3 && <ConnsultationComp />}
             {activeTab === 4 && <SafeSpaceComp />}
             {activeTab === 5 && <OfflineActivity />}
             {activeTab === 6 && <HealthPacks />}
+          </div>
+          {/* ------------for mobile and tab screen----------- */}
+          <div className="w-full h-auto transition-all duration-600 ease-linear flex flex-col gap-[30px] lg:hidden">
+            <HealthDashboard />
+            <HealthFixComp />
+            <ConnsultationComp />
+            <SafeSpaceComp />
+            <OfflineActivity />
+            <HealthPacks />
           </div>
         </div>
       </div>

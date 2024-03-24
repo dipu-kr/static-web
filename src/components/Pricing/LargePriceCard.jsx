@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import { BsDot } from "react-icons/bs";
 
 const LargePriceCard = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 450,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <div className="min-h-[350px] h-auto bg-white shadow-lg rounded-[14px] pb-[25px] overflow-hidden">
+    <div
+      className="min-h-[350px] h-auto bg-white shadow-lg rounded-[14px] pb-[25px] overflow-hidden"
+      data-aos="fade-up"
+    >
       <div className="bg-[#EAEAEA] text-[#092B59] tracking-wide p-6">
         <h1 className="text-[24px] font-[600] leading-[31px] uppercase">
           Large

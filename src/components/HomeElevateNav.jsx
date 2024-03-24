@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiPlus } from "react-icons/hi";
-
 import HomeElevateDetails from "./HomeElevateDetails";
+import AOS from "aos";
 
 const HomeElevateNav = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -42,10 +42,18 @@ const HomeElevateNav = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
+
   return (
     <div className="w-full  bg-[#ffffff]">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
-        <div className="mt-5">
+        <div className="mt-5" data-aos="fade-up">
           {/* -------------tab- div------ */}
           <div className="hidden lg:block">
             <div className="w-full flex justify-between px-4">

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import whyImg from "../assets/images/whyImg.svg";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import AOS from "aos";
 
 const HomeWhyComp = () => {
   const data = [
@@ -25,10 +26,20 @@ const HomeWhyComp = () => {
       para: " Inspire with insightful reads on industry trends and personal growth while keeping everyone aligned with essential updates.",
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   return (
     <div className="w-full bg-[#ffffff]">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
-        <div className="w-full flex items-center justify-between flex-col-reverse lg:flex-row  py-8">
+        <div
+          className="w-full flex items-center justify-between flex-col-reverse lg:flex-row  py-8"
+          data-aos="flip-left"
+        >
           <div className="w-full lg:w-[50%] flex justify-center">
             <img src={whyImg} alt="Image" className="object-cover" />
           </div>

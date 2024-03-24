@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import user1 from "../assets/images/user1.svg";
 import user2 from "../assets/images/user2.svg";
 import user3 from "../assets/images/user3.svg";
 import aiml from "../assets/images/aiml.svg";
+import AOS from "aos";
 
 const HomeMiddlePageComp2 = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   const data = [
     {
       id: 1,
@@ -26,7 +34,7 @@ const HomeMiddlePageComp2 = () => {
     <div className="w-full bg-[#F0F4F7]">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="pt-[35px] lg:pt-[110px] h-auto pb-4  flex flex-col justify-center">
-          <div className="text-center">
+          <div className="text-center" data-aos="fade-up">
             <h6 className="text-[15px] lg:text-[18px] font-[700] leading-[19.98px] uppercase text-[#FF7301] mb-2 lg:mb-0">
               A complete platform
             </h6>
@@ -44,6 +52,7 @@ const HomeMiddlePageComp2 = () => {
                 <div
                   key={val?.id}
                   className="flex flex-col justify-center items-center gap-1"
+                  data-aos="fade-up"
                 >
                   <img
                     src={val?.icon}
@@ -57,7 +66,12 @@ const HomeMiddlePageComp2 = () => {
               ))}
             </div>
             <div className="flex justify-center items-center">
-              <img src={aiml} alt="chart-img" className=" object-conatin" />
+              <img
+                src={aiml}
+                alt="chart-img"
+                className=" object-conatin"
+                data-aos="fade-up"
+              />
             </div>
           </div>
         </div>

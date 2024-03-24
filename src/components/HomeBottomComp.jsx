@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import bgImg2 from "../assets/images/bgImg2.png";
 import bottomLogo from "../assets/images/bottomLogo.png";
+import AOS from "aos";
 
 const HomeBottomComp = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 450,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   return (
     <>
       {/* -----------------for desktop---------------------- */}
       <div className="w-full h-[500px] classBgImg hidden lg:block">
-        <div className="flex justify-center relative">
+        <div className="flex justify-center relative" data-aos="fade-up">
           <div className="px-[15px]">
             <img src={bgImg2} alt="Img" className="object-contain" />
           </div>
@@ -35,7 +43,10 @@ const HomeBottomComp = () => {
       <div className="w-full h-[400px] bg-img-2 block lg:hidden">
         <div className="flex justify-center relative">
           <div className="w-full bg-[#092B59] h-[400px] lg:hidden opacity-[0.9]"></div>
-          <div className="h-full flex justify-center items-center flex-col gap-6 absolute px-[30px]">
+          <div
+            className="h-full flex justify-center items-center flex-col gap-6 absolute px-[30px]"
+            data-aos="fade-up"
+          >
             <img
               src={bottomLogo}
               alt="bottom_logo"

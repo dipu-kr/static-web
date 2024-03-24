@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import solutionGrowimg from "../../assets/images/solutionGrowimg.svg";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
+import AOS from "aos";
 
 const GrowComp = () => {
   const data = [
@@ -21,18 +22,39 @@ const GrowComp = () => {
       para: " Inspire with insightful reads on industry trends and personal growth while keeping everyone aligned with essential updates.",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 450,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <div className="w-full px-[40px] bg-[#F0F4F7] rounded-[14px]">
-      <div className="w-full flex items-center justify-between gap-10 py-[70px]">
-        <div className="w-[50%]">
+    <div className="w-full px-[12px] lg:px-[40px] bg-[#F0F4F7] rounded-[14px] my-[25px] lg:my-0">
+      <div
+        className="w-full flex items-center justify-between flex-col lg:flex-row gap-5 lg:gap-10 py-[20px] lg:py-[70px]"
+        data-aos="zoom-in-up"
+      >
+        <div className="w-full lg:w-[50%]">
+          <div className="lg:hidden">
+            <h3 className="flex">
+              <span className="flex text-[22px] font-[600] text-[#000000] leading-[30px] border-b-2 border-blue-500">
+                Grow
+              </span>
+              <span>
+                <FaPlus size={15} />
+              </span>
+            </h3>
+          </div>
           <img
             src={solutionGrowimg}
             alt="Image"
-            className="w-[600px] object-cover"
+            className="w-full lg:w-[600px] object-cover"
           />
         </div>
-        <div className="w-[50%]">
-          <h3 className="flex text-[24px] font-[600] text-[#000000] leading-[30px] pb-5">
+        <div className="w-full lg:w-[50%]">
+          <h3 className="flex text-[22px] lg:text-[24px] font-[600] text-[#000000] leading-[30px] pb-5">
             <span>Grow</span>
             <span>
               <FaPlus size={15} />
@@ -44,7 +66,9 @@ const GrowComp = () => {
               className="flex justify-center items-center gap-[15px] mb-5"
             >
               <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
-              <p className="font-[400] text-[16px] text-justify">{val?.para}</p>
+              <p className="font-[400] text-[14px] lg:text-[16px] text-justify">
+                {val?.para}
+              </p>
             </div>
           ))}
         </div>

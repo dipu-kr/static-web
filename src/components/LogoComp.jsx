@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo1 from "../assets/images/logo1.svg";
 import logo2 from "../assets/images/logo2.svg";
 import logo3 from "../assets/images/logo3.svg";
+import AOS from "aos";
 
 const LogoComp = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 450,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   return (
-    <div className="w-full bg-[#F0F4F7]">
+    <div className="w-full bg-[#F0F4F7]" data-aos="fade-up">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="h-auto lg:h-[200px] flex flex-col justify-center items-center gap-5 py-8">
           <h5 className="text-[15px] lg:text-[17px] font-[600] text-[#092B59] leading-[]28px text-center">

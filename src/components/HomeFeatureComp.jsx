@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import featureIcon1 from "../assets/images/featureIcon1.svg";
 import featureIcon2 from "../assets/images/featureIcon2.svg";
 import featureIcon3 from "../assets/images/featureIcon3.svg";
@@ -45,20 +46,38 @@ const HomeFeatureComp = () => {
       para: "Linking recognition to goals? It's not just a strategy; it's a game-changer! Watch productivity soar as every 'thank you' aligns with your team's objectives.",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({
+      duration: 450,
+      offset: 120,
+      easing: "ease",
+    });
+  }, []);
   return (
     <div className="w-full h-auto bg-[#ffffff]">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="w-full flex justify-center items-center flex-col pt-[70px] lg:pt-[100px] pb-[70px] lg:pb-[130px]">
-          <h5 className="text-[#FF7301] text-[14px] lg:text-[18px] leading-[20px] font-[700] uppercase tracking-wider text-center mb-2 lg:mb-0">
+          <h5
+            className="text-[#FF7301] text-[14px] lg:text-[18px] leading-[20px] font-[700] uppercase tracking-wider text-center mb-2 lg:mb-0"
+            data-aos="fade-up"
+          >
             Battle tested for the enterprise
           </h5>
-          <h2 className="text-[24px] lg:text-[38px] font-[600] leading-[30px] lg:leading-[46px] text-center">
+          <h2
+            className="text-[24px] lg:text-[38px] font-[600] leading-[30px] lg:leading-[46px] text-center"
+            data-aos="fade-up"
+          >
             Retain top talent with our exclusive{" "}
             <span className="text-[#FF7301]">personalized</span> features
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[80px] lg:px-[50px] mt-10">
             {dataList?.map((val) => (
-              <div key={val?.id} className="w-full flex gap-5">
+              <div
+                key={val?.id}
+                className="w-full flex gap-5"
+                data-aos="fade-up"
+              >
                 <div className="w-[130px] lg:w-[80px] h-[80px]">
                   <img src={val?.icon} alt={`Icon ${val?.id}`} />
                 </div>
