@@ -43,9 +43,9 @@ const ContactUs = () => {
             <ContactInfo />
           </div>
         </div>
-        <div className="w-full h-auto pb-[40px] lg:pb-[90px] mt-0 lg:mt-[90px]">
+        <div className="w-full h-auto pb-[40px] lg:pb-[90px] mt-0 lg:mt-[50px]">
           <div
-            className="w-[90%] lg:w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white lg:border border-gray-200 rounded-[14px] mx-auto py-[20px] lg:p-8 z-10"
+            className="w-[90%] lg:w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white lg:border border-gray-200 rounded-[14px] mx-auto sm:py-[70px] lg:py-0 lg:p-8 z-10"
             data-aos="fade-up"
           >
             <QuestionsSection />

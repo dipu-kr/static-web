@@ -1,15 +1,18 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React, { useState, useEffect } from "react";
+
 import healthdashboard from "../../assets/images/healthdashboard.svg";
 
-const HealthDashboard = () => {
+const HealthDashboard = ({ id }) => {
+  const [showContent, setShowContent] = useState(false);
+
   useEffect(() => {
-    AOS.init({
-      duration: 550,
-      offset: 120,
-      easing: "ease",
-    });
-  }, []);
+    setShowContent(false);
+    const timeout = setTimeout(() => {
+      setShowContent(true);
+    }, 200);
+
+    return () => clearTimeout(timeout);
+  }, [id]);
   return (
     <div className="my-[25px] lg:my-0">
       <div className="lg:hidden">
@@ -22,7 +25,10 @@ const HealthDashboard = () => {
       <div className="w-full min-h-[380px] px-[12px] lg:px-[40px] bg-[#F0F4F7] rounded-[14px]">
         <div
           className="w-full flex items-center justify-between flex-col lg:flex-row gap-5 lg:gap-10 py-[20px] lg:py-[70px]"
-          data-aos="zoom-in-up"
+          style={{
+            opacity: showContent ? 1 : 0,
+            transition: showContent ? "opacity 0.4s ease" : "",
+          }}
         >
           <div className="w-full lg:w-[50%]">
             <img
@@ -35,7 +41,7 @@ const HealthDashboard = () => {
             <h3 className="text-[20px] font-[600] leading-[40px]">
               Health Dashboard
             </h3>
-            <p className="text-[14px] lg:text-[16px] font-[400] text-justify">
+            <p className="text-[14px] lg:text-[16px] font-[400]">
               Track health progress easily. Our dashboard consolidates
               activities and offers support, ensuring employee well-being stays
               a priority.

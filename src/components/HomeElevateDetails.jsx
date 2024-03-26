@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React, { useState, useEffect } from "react";
 import elevateEngage from "../assets/images/elevateEngage.jpg";
 import elevateGrow from "../assets/images/elevateGrow.jpg";
 import elevateMeet from "../assets/images/elevateMeet.jpg";
 import elevateHealth from "../assets/images/elevateHealth.jpg";
 import elevateRobo from "../assets/images/elevateRobo.jpg";
 import elevateMarket from "../assets/images/elevateMarket.jpg";
-// import { HiPlus } from "react-icons/hi";
 import tab1 from "../assets/images/tab1.svg";
 import tab2 from "../assets/images/tab2.svg";
 import tab3 from "../assets/images/tab3.svg";
@@ -65,14 +63,17 @@ const HomeElevateDetails = ({ activeTab }) => {
       image: elevateMarket,
     },
   ];
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 500,
-      offset: 120,
-      easing: "ease",
-    });
-  }, []);
+    setShowContent(false);
+    const timeout = setTimeout(() => {
+      setShowContent(true);
+    }, 250);
+
+    return () => clearTimeout(timeout);
+  }, [activeTab]);
+
   return (
     <>
       <div className="w-full my-[50px] hidden lg:block">
@@ -84,7 +85,10 @@ const HomeElevateDetails = ({ activeTab }) => {
                 className={`flex items-center px-[30px] gap-[70px] ${
                   activeTab % 2 === 0 && "flex-row-reverse"
                 }`}
-                data-aos="zoom-in"
+                style={{
+                  opacity: showContent ? 1 : 0,
+                  transition: showContent ? "opacity 0.4s ease" : "",
+                }}
               >
                 <div className="w-[50%]">
                   <h1 className="flex text-[26px] font-[600] leading-[35px]">
@@ -93,7 +97,7 @@ const HomeElevateDetails = ({ activeTab }) => {
                       +
                     </span>
                   </h1>
-                  <p className="text-justify my-2 font-[]400 text-[16.5px] leading-[30px]">
+                  <p className="my-2 font-[]400 text-[16.5px] leading-[30px]">
                     {val?.paragraph}
                   </p>
                 </div>
@@ -122,7 +126,7 @@ const HomeElevateDetails = ({ activeTab }) => {
                 <span>{val?.title}</span>
                 <span className="font-[400] text-[35px] leading-[35px]">+</span>
               </h1>
-              <p className="text-justify my-2 font-[400] text-[14px] leading-[24px] lg:text-[16px] lg:leading-[30px]">
+              <p className=" my-2 font-[400] text-[14px] leading-[24px] lg:text-[16px] lg:leading-[30px]">
                 {val?.paragraph}
               </p>
             </div>

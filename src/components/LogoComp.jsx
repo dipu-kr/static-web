@@ -20,23 +20,20 @@ const LogoComp = () => {
             From the team who pioneered the first feature store at Uber, Tecton
             powers trillions of AI predictions, from startups to the Fortune 50.
           </h5>
-
-          <marquee width="100%" direction="left">
-            <div className="flex gap-4 lg:gap-10">
-              <img
-                src={logo3}
-                className="w-[120px] sm:-[135px] lg:w-[164px] bg-contain"
-              />
-              <img
-                src={logo1}
-                className="w-[50px] sm:w-[53px] lg:w-[56px] bg-contain"
-              />
-              <img
-                src={logo2}
-                className="w-[120px] sm:-[135px] lg:w-[166px] bg-contain"
-              />
-            </div>
-          </marquee>
+          <div className="flex gap-4 lg:gap-10">
+            <img
+              src={logo3}
+              className="w-[120px] sm:-[135px] lg:w-[164px] bg-contain"
+            />
+            <img
+              src={logo1}
+              className="w-[50px] sm:w-[53px] lg:w-[56px] bg-contain"
+            />
+            <img
+              src={logo2}
+              className="w-[120px] sm:-[135px] lg:w-[166px] bg-contain"
+            />
+          </div>
         </div>
       </div>
     </div>

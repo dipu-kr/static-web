@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React, { useState, useEffect } from "react";
+
 import languageproficiency from "../../assets/images/languageproficiency.svg";
 import culturalfitassesment from "../../assets/images/culturalfitassesment.svg";
 import comparativeanalysis from "../../assets/images/comparativeanalysis.svg";
@@ -25,14 +25,16 @@ const LanguageProficiency = ({ activeTab }) => {
       image: comparativeanalysis,
     },
   ];
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 450,
-      offset: 120,
-      easing: "ease",
-    });
-  }, []);
+    setShowContent(false);
+    const timeout = setTimeout(() => {
+      setShowContent(true);
+    }, 250);
+
+    return () => clearTimeout(timeout);
+  }, [activeTab]);
 
   return (
     <div className="w-full min-h-[380px] lg:px-[40px] lg:bg-[#F0F4F7] rounded-[14px]">
@@ -43,7 +45,10 @@ const LanguageProficiency = ({ activeTab }) => {
               <div
                 className="w-full flex items-center justify-between gap-10 py-[70px]"
                 key={val?.id}
-                data-aos="zoom-in-up"
+                style={{
+                  opacity: showContent ? 1 : 0,
+                  transition: showContent ? "opacity 0.4s ease" : "",
+                }}
               >
                 <div className="w-[50%]">
                   <h3 className="text-[20px] font-[600] leading-[40px]">
@@ -55,7 +60,7 @@ const LanguageProficiency = ({ activeTab }) => {
                   <img
                     src={val?.image}
                     alt="Image"
-                    className="w-[600px] object-cover"
+                    className="w-full lg:w-[600px] object-cover"
                   />
                 </div>
               </div>
@@ -81,7 +86,7 @@ const LanguageProficiency = ({ activeTab }) => {
                 <h3 className="text-[20px] font-[600] leading-[40px]">
                   {val?.title}
                 </h3>
-                <p className="text-[14px] lg:text-[16px] font-[400] text-justify">
+                <p className="text-[14px] lg:text-[16px] font-[400]">
                   {val?.des}
                 </p>
               </div>

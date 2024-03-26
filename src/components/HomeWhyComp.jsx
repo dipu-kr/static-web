@@ -50,7 +50,7 @@ const HomeWhyComp = () => {
             {data?.map((val) => (
               <div key={val?.id} className="flex gap-[6px] mb-5">
                 <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
-                <p className="text-[16px] leading-[25px] font-[400] text-justify">
+                <p className="text-[16px] leading-[25px] font-[400]">
                   {val?.para}
                 </p>
               </div>

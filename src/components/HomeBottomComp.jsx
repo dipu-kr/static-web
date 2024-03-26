@@ -16,7 +16,7 @@ const HomeBottomComp = () => {
     <>
       {/* -----------------for desktop---------------------- */}
       <div className="w-full h-[500px] classBgImg hidden lg:block">
-        <div className="flex justify-center relative" data-aos="fade-up">
+        <div className="flex justify-center relative">
           <div className="px-[15px]">
             <img src={bgImg2} alt="Img" className="object-contain" />
           </div>

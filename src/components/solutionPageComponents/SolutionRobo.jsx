@@ -34,15 +34,16 @@ const SolutionRobo = () => {
                 <FaPlus className="font-[600] text-[21px] lg:text-[28px]" />
               </span>
             </h1>
-            <div className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000] text-justify">
+            <div className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
               <p>
                 Empower your employees to thrive with Inimble Health's access to
-                personalized sessions,
+                personalized sessions, expert consultations, and curated health
+                packs. Dive into a wealth of healthand wellness
               </p>
-              <p className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
+              {/* <p className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
                 expert consultations, and curated health packs. Dive into a
                 wealth of healthand wellness{" "}
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="w-full hidden lg:block" data-aos="fade-up">

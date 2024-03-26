@@ -85,7 +85,7 @@ const HomeFeatureComp = () => {
                   <h5 className="text-[16px] lg:text-[20px] font-[500] leading-[20px] lg:leading-[26px] mb-2 text-[#000000]">
                     {val?.title}
                   </h5>
-                  <p className="text-justify text-[14px] font-[400] text-[#7F7F7F]">
+                  <p className="text-[14px] font-[400] text-[#7F7F7F]">
                     {val?.para}
                   </p>
                 </div>

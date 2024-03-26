@@ -37,8 +37,8 @@ const Pricing = () => {
               </p>
             </div>
           </div>
-          <div className="w-full max-w-[1535px] mx-auto h-[1880px] sm:h-[900px] xl:h-[400px]"></div>
-          <div className=" w-[90%] lg:w-[80%] max-w-[1535px]  min-h-[300px] h-auto  absolute top-[230px] sm:top-[210px] lg:top-[195px] xl:top-[165px] mx-auto left-0 right-0 z-10">
+          <div className="w-full max-w-[1535px] mx-auto h-[1860px] sm:h-[900px] xl:h-[400px]"></div>
+          <div className=" w-[90%] lg:w-[80%] max-w-[1535px]  min-h-[300px] h-auto  absolute top-[210px] sm:top-[210px] lg:top-[195px] xl:top-[165px] mx-auto left-0 right-0 z-10">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
               <MicroPriceCard />
               <SmallPriceCard />
@@ -47,9 +47,9 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-auto pb-[30px] lg:pb-[90px]">
+        <div className="w-full h-auto pb-[50px] lg:pb-[90px]">
           <div
-            className="w-[90%] lg:w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white lg:border border-gray-200 rounded-[14px] mx-auto py-[20px] lg:p-8 z-10"
+            className="w-[90%] lg:w-[80%] max-w-[1535px] min-h-[300px] h-auto flex gap-10 bg-white lg:border border-gray-200 rounded-[14px] mx-auto  lg:p-8 z-10"
             data-aos="zoom-in-up"
           >
             <PricingQNA />

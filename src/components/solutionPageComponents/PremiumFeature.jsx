@@ -71,15 +71,16 @@ const PremiumFeature = () => {
               data-aos="fade-up"
             >
               Deploy Tecton in your existing environment and immediately benefit
-              from a central source of truth to
+              from a central source of truth to design, orchestrate, and serve
+              fresh features across the organization.
             </p>
-            <p
+            {/* <p
               className="font-[400] text-[16px] lg:text-[22px] leading-[24px] lg:leading-[30px] text-center text-[#375069]"
               data-aos="fade-up"
             >
               design, orchestrate, and serve fresh features across the
               organization.
-            </p>
+            </p> */}
           </div>
           <div
             className="flex gap-2 lg:gap-8 mt-[40px] lg:mt-[63px] mb-[30px] lg:mb-0 flex-col lg:flex-row"
@@ -96,12 +97,13 @@ const PremiumFeature = () => {
             <div className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
               <p>
                 Empower your employees to thrive with Inimble Health's access to
-                personalized sessions,
+                personalized sessions, expert consultations, and curated health
+                packs. Dive into a wealth of healthand wellness
               </p>
-              <p className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
+              {/* <p className="font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[35px] text-[#000000]">
                 expert consultations, and curated health packs. Dive into a
                 wealth of healthand wellness{" "}
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="w-full hidden lg:block" data-aos="fade-up">
@@ -126,12 +128,12 @@ const PremiumFeature = () => {
             className="w-full h-auto transition-all duration-600 ease-linear hidden lg:block"
             data-aos="fade-up"
           >
-            {activeTab === 1 && <HealthDashboard />}
-            {activeTab === 2 && <HealthFixComp />}
-            {activeTab === 3 && <ConnsultationComp />}
-            {activeTab === 4 && <SafeSpaceComp />}
-            {activeTab === 5 && <OfflineActivity />}
-            {activeTab === 6 && <HealthPacks />}
+            {activeTab === 1 && <HealthDashboard id={activeTab} />}
+            {activeTab === 2 && <HealthFixComp id={activeTab} />}
+            {activeTab === 3 && <ConnsultationComp id={activeTab} />}
+            {activeTab === 4 && <SafeSpaceComp id={activeTab} />}
+            {activeTab === 5 && <OfflineActivity id={activeTab} />}
+            {activeTab === 6 && <HealthPacks id={activeTab} />}
           </div>
           {/* ------------for mobile and tab screen----------- */}
           <div className="w-full h-auto transition-all duration-600 ease-linear flex flex-col lg:hidden">

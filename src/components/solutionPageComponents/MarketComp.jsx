@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import solutionMarketimg from "../../assets/images/solutionMarketimg.svg";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
-import AOS from "aos";
 
-const MarketComp = () => {
+const MarketComp = ({ id }) => {
   const data = [
     {
       id: 1,
@@ -23,13 +22,16 @@ const MarketComp = () => {
     },
   ];
 
+  const [showContent, setShowContent] = useState(false);
   useEffect(() => {
-    AOS.init({
-      duration: 450,
-      offset: 120,
-      easing: "ease",
-    });
-  }, []);
+    setShowContent(false);
+    const timeout = setTimeout(() => {
+      setShowContent(true);
+    }, 200);
+
+    return () => clearTimeout(timeout);
+  }, [id]);
+
   return (
     <>
       <div className="lg:hidden pt-[25px]">
@@ -45,7 +47,10 @@ const MarketComp = () => {
       <div className="w-full px-[12px] lg:px-[40px] bg-[#F0F4F7] rounded-[14px]">
         <div
           className="w-full flex items-center justify-between flex-col lg:flex-row gap-5 lg:gap-10 py-[20px] lg:py-[70px]"
-          data-aos="zoom-in-up"
+          style={{
+            opacity: showContent ? 1 : 0,
+            transition: showContent ? "opacity 0.4s ease" : "",
+          }}
         >
           <div className="w-full lg:w-[50%]">
             <img
@@ -69,7 +74,7 @@ const MarketComp = () => {
                 className="flex justify-center items-center gap-[15px] mb-5"
               >
                 <p className="text-[20px] mt-1 text-[#1A73E8]">{val?.icon}</p>
-                <p className="font-[400] text-[14px] lg:text-[16px] text-justify">
+                <p className="font-[400] text-[14px] lg:text-[16px]">
                   {val?.para}
                 </p>
               </div>

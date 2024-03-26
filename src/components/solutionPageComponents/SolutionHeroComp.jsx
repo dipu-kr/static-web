@@ -24,7 +24,7 @@ const SolutionHeroComp = () => {
             <h1 className="text-[26px] lg:text-[50px] font-[600] leading-[30px] lg:leading-[53px]">
               Real Value
             </h1>
-            <p className="text-justify text-[16px]  lg:text-[18px] font-[400] leading-[26px] lg:leading-[32px] mt-4">
+            <p className="text-[16px]  lg:text-[18px] font-[400] leading-[26px] lg:leading-[32px] mt-4">
               Whether you’re already deploying real-time predictions or about
               to, Tecton connects to leading infrastructure solutions and tools
               to make your real- time ML journey as successful as possible.

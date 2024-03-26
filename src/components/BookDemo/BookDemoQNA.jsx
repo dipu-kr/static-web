@@ -11,7 +11,7 @@ const BookDemoQNA = () => {
         Do you have any Question
       </h2>
       <div className="mt-3">
-        <Accordion defaultExpanded>
+        <Accordion defaultExpanded style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel1-content"
@@ -27,7 +27,7 @@ const BookDemoQNA = () => {
             HR tasks, and supporting remote work effectively.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel2-content"
@@ -42,7 +42,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"
@@ -57,7 +57,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"
@@ -72,7 +72,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"
@@ -87,7 +87,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"
@@ -102,7 +102,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"
@@ -117,7 +117,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"
@@ -132,7 +132,7 @@ const BookDemoQNA = () => {
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
         </Accordion>
-        <Accordion>
+        <Accordion style={{ boxShadow: "none" }}>
           <AccordionSummary
             expandIcon={<MdKeyboardArrowDown />}
             aria-controls="panel3-content"

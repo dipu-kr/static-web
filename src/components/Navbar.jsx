@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
@@ -8,9 +8,11 @@ import "../css/navbar.css";
 const Navbar = () => {
   const navigate = useNavigate();
   const [menu, setMenu] = useState(false);
+
   const menuControl = () => {
     setMenu(!menu);
   };
+
   return (
     <div className="w-full h-[89px] mx-auto bg-[#ffffff] fixed top-0 z-50">
       <nav className="nav-main max-w-[1535px] mx-auto">

@@ -13,12 +13,12 @@ const HeroSection = () => {
     });
   }, []);
   return (
-    <div className="w-full max-w-[1535px] mx-auto h-auto flex flex-col-reverse lg:flex-row items-center pb-[60px]">
+    <div className="w-full max-w-[1535px] mx-auto h-auto flex flex-col lg:flex-row items-center pb-[60px]">
       <div
         className="w-[100%] lg:w-[50%] px-[12px] sm:px-[40px] lg:pl-[100px] xl:pl-[150px]"
         data-aos="zoom-in-up"
       >
-        <div className="w-full flex pt-[30px] sm:pt-[60px] md:pt-[140px] lg:pt-[85.92px]">
+        <div className="w-full flex pt-[40px] sm:pt-[40px] md:pt-[100px] lg:pt-[85.92px]">
           <div className="w-full">
             <p className="flex mb-2 gap-4 text-[#092B59]">
               <span className="font-[600] text-[11px] lg:text-[16.2px] leading-[19.98px]">
@@ -63,7 +63,7 @@ const HeroSection = () => {
               <span className="text-[#FF7301]">workplace awesome</span> with{" "}
               <span className="text-[#FF7301]">Employee Engagement!</span>
             </h1>
-            <p className="w-full sm:w-[100%] lg:w-[90%] mt-[16px] text-justify font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[30px] text-[#092B59]">
+            <p className="w-full sm:w-[100%] lg:w-[90%] mt-[16px] font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[30px] text-[#092B59]">
               Empower your workforce for an ever-changing landscape with
               Inimble's dynamic features. Adapt, evolve, and excel effortlessly.
             </p>
@@ -88,8 +88,8 @@ const HeroSection = () => {
         </div>
       </div>
       {/* -------------right content-------------- */}
-      <div className="w-[100%] lg:w-[50%] h-[270px] sm:h-[440px] md:h-[500px] lg:h-[500px] relative">
-        <div className="w-full pl-4 lg:pl-0 lg:flex lg:justify-end  absolute right-[-65px] top-[-15px] sm:top-[-70px] sm:right-[-150px] md:top-[-40px] md:right-[-170px] lg:top-[-50px] lg:right-[-148px]">
+      <div className="w-[100%] lg:w-[50%] h-[280px] sm:h-[440px] md:h-[650px] lg:h-[500px] relative">
+        <div className="w-full pl-4 lg:pl-0 lg:flex lg:justify-end mt-[30px] lg:mt-0 absolute lg:top-[-50px] lg:right-[-148px]">
           <img
             src={heroImg2}
             alt="img"

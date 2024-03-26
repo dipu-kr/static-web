@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import Frame from "../../assets/images/Frame.svg";
 import Frame1 from "../../assets/images/Frame1.svg";
@@ -52,13 +52,17 @@ const PerformanceDashboard = ({ activeTab }) => {
         "Track health progress easily. Our dashboard consolidates activities and offers support, ensuring employee well-being stays a priority.",
     },
   ];
+
+  const [showContent, setShowContent] = useState(false);
+
   useEffect(() => {
-    AOS.init({
-      duration: 450,
-      offset: 120,
-      easing: "ease",
-    });
-  }, []);
+    setShowContent(false);
+    const timeout = setTimeout(() => {
+      setShowContent(true);
+    }, 200);
+
+    return () => clearTimeout(timeout);
+  }, [activeTab]);
 
   return (
     <div className="w-full min-h-[380px] lg:px-[40px] lg:bg-[#F0F4F7] rounded-[14px]">
@@ -69,7 +73,10 @@ const PerformanceDashboard = ({ activeTab }) => {
               <div
                 key={val?.id}
                 className="w-full flex items-center justify-between gap-10 py-[70px]"
-                data-aos="zoom-in-up"
+                style={{
+                  opacity: showContent ? 1 : 0,
+                  transition: showContent ? "opacity 0.4s ease" : "",
+                }}
               >
                 <div className="w-[50%]">
                   <img

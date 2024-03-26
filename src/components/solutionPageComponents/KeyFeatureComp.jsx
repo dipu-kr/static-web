@@ -35,15 +35,16 @@ const KeyFeatureComp = () => {
               data-aos="fade-up"
             >
               Deploy Tecton in your existing environment and immediately benefit
-              from a central source of truth to
+              from a central source of truth to design, orchestrate, and serve
+              fresh features across the organization.
             </p>
-            <p
+            {/* <p
               className="font-[400] text-[16px] lg:text-[22px] leading-[26px] lg:leading-[30px] text-[#375069] text-center"
               data-aos="fade-up"
             >
               design, orchestrate, and serve fresh features across the
               organization.
-            </p>
+            </p> */}
           </div>
           <div className="hidden lg:block">
             <div
@@ -84,10 +85,10 @@ const KeyFeatureComp = () => {
             </div>
           </div>
           {/* -----------------components------------ */}
-          <div className="w-full hidden lg:block" data-aos="fade-up">
-            {activeTab === 1 && <EngageComp />}
-            {activeTab === 2 && <GrowComp />}
-            {activeTab === 3 && <MarketComp />}
+          <div className="w-full hidden lg:block">
+            {activeTab === 1 && <EngageComp id={activeTab} />}
+            {activeTab === 2 && <GrowComp id={activeTab} />}
+            {activeTab === 3 && <MarketComp id={activeTab} />}
           </div>
           <div className="w-full lg:hidden">
             <EngageComp />
