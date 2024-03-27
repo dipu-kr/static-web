@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import Frame from "../../assets/images/Frame.svg";
-import Frame1 from "../../assets/images/Frame1.svg";
-import Frame2 from "../../assets/images/Frame2.svg";
-import Frame3 from "../../assets/images/Frame3.svg";
-import Frame4 from "../../assets/images/Frame4.svg";
-import Frame5 from "../../assets/images/Frame5.svg";
+
+import Frame from "../../assets/images/Frame.jpg";
+import Frame1 from "../../assets/images/Frame1.png";
+import Frame2 from "../../assets/images/Frame2.png";
+import Frame3 from "../../assets/images/Frame3.png";
+import Frame4 from "../../assets/images/Frame4.jpg";
+import Frame5 from "../../assets/images/Frame5.jpg";
 
 const PerformanceDashboard = ({ activeTab }) => {
   const tabData = [
@@ -82,7 +82,7 @@ const PerformanceDashboard = ({ activeTab }) => {
                   <img
                     src={val?.image}
                     alt="Image"
-                    className="w-[600px] h-[350px] object-cover"
+                    className="w-[600px] h-[350px] object-contain"
                   />
                 </div>
                 <div className="w-[50%]">
@@ -114,7 +114,7 @@ const PerformanceDashboard = ({ activeTab }) => {
                 <img
                   src={val?.image}
                   alt="Image"
-                  className="w-full lg:w-[600px] lg:h-[350px] object-cover"
+                  className="w-full lg:w-[600px] lg:h-[350px] object-contain"
                 />
               </div>
               <div className="w-full lg:w-[50%]">
