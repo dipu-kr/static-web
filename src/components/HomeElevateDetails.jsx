@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import elevateEngage from "../assets/images/elevateEngage.jpg";
-import elevateGrow from "../assets/images/elevateGrow.jpg";
-import elevateMeet from "../assets/images/elevateMeet.jpg";
-import elevateHealth from "../assets/images/elevateHealth.jpg";
-import elevateRobo from "../assets/images/elevateRobo.jpg";
+import elevateEngage from "../assets/images/elevateEngage.svg";
+import elevateGrow from "../assets/images/elevateGrow.svg";
+import elevateMeet from "../assets/images/elevateMeet.svg";
+import elevateHealth from "../assets/images/elevateHealth.svg";
+import elevateAI from "../assets/images/elevateAI.svg";
 import elevateMarket from "../assets/images/elevateMarket.jpg";
 import tab1 from "../assets/images/tab1.svg";
 import tab2 from "../assets/images/tab2.svg";
@@ -48,20 +48,20 @@ const HomeElevateDetails = ({ activeTab }) => {
     },
     {
       id: 5,
-      title: "Robo",
+      title: "AI",
       icon: tab5,
       paragraph:
         "Harness advanced insights with Inimble Candidate Analyzer to effortlessly evaluate candidates' language proficiency, cultural fit, and communication skills. Assess fluency, pronunciation, and proficiency while aligning candidates seamlessly with organizational ethos. Gauge clarity, engagement, and articulation, thereby benchmarking candidates for informed decision-making.",
-      image: elevateRobo,
+      image: elevateAI,
     },
-    {
-      id: 6,
-      title: "Market",
-      icon: tab6,
-      paragraph:
-        "Connect with trusted vendors, streamline event planning, and offer seamless services to your employees through the Inimble Vendor Marketplace. Showcase your skills and services effortlessly while opening doors to diverse event opportunities. Stay organized and never miss an event, enhancing event experiences through continuous feedback and improvement.",
-      image: elevateMarket,
-    },
+    // {
+    //   id: 6,
+    //   title: "Market",
+    //   icon: tab6,
+    //   paragraph:
+    //     "Connect with trusted vendors, streamline event planning, and offer seamless services to your employees through the Inimble Vendor Marketplace. Showcase your skills and services effortlessly while opening doors to diverse event opportunities. Stay organized and never miss an event, enhancing event experiences through continuous feedback and improvement.",
+    //   image: elevateMarket,
+    // },
   ];
   const [showContent, setShowContent] = useState(false);
 

@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 const Layout = ({ children }) => {
   return (
     <div className="w-full h-auto overflow-x-hidden">
-      <div className="h-[87px] bg-[#ffffff]">
+      <div className="h-[89px] bg-[#ffffff]">
         <Navbar />
       </div>
       <div className="w-full h-auto">{children}</div>

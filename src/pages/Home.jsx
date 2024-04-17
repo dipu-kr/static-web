@@ -7,7 +7,7 @@ import HomeMiddlePageComp2 from "../components/HomeMiddlePageComp2";
 import HomeElevateComp from "../components/HomeElevateComp";
 import HomeElevateNav from "../components/HomeElevateNav";
 import HomeWhyComp from "../components/HomeWhyComp";
-import CustomerStoriesComp from "../components/CustomerStoriesComp";
+// import CustomerStoriesComp from "../components/CustomerStoriesComp";
 import HomeFeatureComp from "../components/HomeFeatureComp";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
         <HomeElevateComp />
         <HomeElevateNav />
         <HomeWhyComp />
-        <CustomerStoriesComp />
+        {/* <CustomerStoriesComp /> */}
         <HomeFeatureComp />
       </div>
     </Layout>

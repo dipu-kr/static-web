@@ -33,13 +33,13 @@ const HomeElevateNav = () => {
     {
       id: 5,
       tab: 5,
-      title: "Robo",
+      title: "AI",
     },
-    {
-      id: 6,
-      tab: 6,
-      title: "Market",
-    },
+    // {
+    //   id: 6,
+    //   tab: 6,
+    //   title: "Market",
+    // },
   ];
 
   useEffect(() => {

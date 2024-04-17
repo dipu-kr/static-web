@@ -8,22 +8,22 @@ const HomeWhyComp = () => {
     {
       id: 1,
       icon: <IoIosCheckmarkCircleOutline />,
-      para: "Amplify voices, share updates, and uncover insights with a diverse array of features including articles, polls, announcements, surveys, and pulse checks.",
+      para: "Boost employee morale, productivity, and retention rates.",
     },
     {
       id: 2,
       icon: <IoIosCheckmarkCircleOutline />,
-      para: "Dive deep into employee sentiments and preferences to bridge perspectives and encourage active participation.",
+      para: "Simplify HR tasks and nurture continuous growth and innovation.",
     },
     {
       id: 3,
       icon: <IoIosCheckmarkCircleOutline />,
-      para: " Inspire with insightful reads on industry trends and personal growth while keeping everyone aligned with essential updates.",
+      para: "Enhance team collaboration and goal alignment.",
     },
     {
       id: 4,
       icon: <IoIosCheckmarkCircleOutline />,
-      para: " Inspire with insightful reads on industry trends and personal growth while keeping everyone aligned with essential updates.",
+      para: "Promote employee well-being and reduce absenteeism.",
     },
   ];
   useEffect(() => {

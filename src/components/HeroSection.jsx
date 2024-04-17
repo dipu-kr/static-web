@@ -1,23 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { GoArrowRight } from "react-icons/go";
-// import heroImg from "../assets/images/homeimg.png";
-import heroImg2 from "../assets/images/heroImg2.png";
-import AOS from "aos";
+import homeImg from "../assets/images/homeImg.svg";
+// import heroImg2 from "../assets/images/heroImg2.png";
 
 const HeroSection = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 400,
-      offset: 100,
-      easing: "ease",
-    });
-  }, []);
   return (
     <div className="w-full max-w-[1535px] mx-auto h-auto flex flex-col lg:flex-row items-center pb-[60px]">
-      <div
-        className="w-[100%] lg:w-[50%] px-[12px] sm:px-[40px] lg:pl-[100px] xl:pl-[150px]"
-        data-aos="zoom-in-up"
-      >
+      <div className="w-[100%] lg:w-[50%] px-[12px] sm:px-[40px] lg:pl-[100px] xl:pl-[150px]">
         <div className="w-full flex pt-[40px] sm:pt-[40px] md:pt-[100px] lg:pt-[85.92px]">
           <div className="w-full">
             <p className="flex mb-2 gap-4 text-[#092B59]">
@@ -58,10 +47,15 @@ const HeroSection = () => {
                 </span>
               </span>{" "}
             </p>
-            <h1 className="text-[24px] lg:text-[38px] font-[600] leading-[30px] lg:leading-[46px]">
-              Make Your{" "}
-              <span className="text-[#FF7301]">workplace awesome</span> with{" "}
-              <span className="text-[#FF7301]">Employee Engagement!</span>
+            <h1 className="flex flex-col text-[24px] lg:text-[38px] font-[600] leading-[30px] lg:leading-[46px]">
+              <span>
+                Make Your{" "}
+                <span className="text-[#FF7301]">Workplace Great</span>
+              </span>
+              <span>
+                With{" "}
+                <span className="text-[#FF7301]">Employee Engagement!</span>
+              </span>
             </h1>
             <p className="w-full sm:w-[100%] lg:w-[90%] mt-[16px] font-[400] text-[16px] lg:text-[24px] leading-[24px] lg:leading-[30px] text-[#092B59]">
               Empower your workforce for an ever-changing landscape with
@@ -88,13 +82,12 @@ const HeroSection = () => {
         </div>
       </div>
       {/* -------------right content-------------- */}
-      <div className="w-[100%] lg:w-[50%] h-[280px] sm:h-[440px] md:h-[650px] lg:h-[500px] relative">
-        <div className="w-full pl-4 lg:pl-0 lg:flex lg:justify-end mt-[30px] lg:mt-0 absolute lg:top-[-50px] lg:right-[-148px]">
+      <div className="w-[100%] lg:w-[50%]  lg:h-[500px] mt-[10px] md:mt-[57px] ">
+        <div className="w-full pl-4 lg:pl-0 lg:flex lg:justify-end mt-[30px] lg:mt-0 ">
           <img
-            src={heroImg2}
+            src={homeImg}
             alt="img"
             className="w-full lg:w-[100%] bg-cover"
-            data-aos="zoom-in-up"
           />
         </div>
       </div>

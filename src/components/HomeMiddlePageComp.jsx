@@ -2,11 +2,14 @@ import React, { useEffect } from "react";
 import engage from "../assets/images/engage.svg";
 import grow from "../assets/images/grow.svg";
 import meet from "../assets/images/meet.svg";
-import market from "../assets/images/market.svg";
+import ai from "../assets/images/ai.svg";
+import health from "../assets/images/health.svg";
 import { GoArrowRight } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 
 const HomeMiddlePageComp = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 400,
@@ -19,25 +22,31 @@ const HomeMiddlePageComp = () => {
       id: 1,
       img: engage,
       heading: "Engage",
-      para: "Create happy moments that foster teamwork and joy.",
+      para: "Drive interaction and knowledge sharing with Articles, Announcements, Polls, and Surveys.",
     },
     {
       id: 2,
       img: grow,
       heading: "Grow",
-      para: "Elevate team spirit and cultivate shared experiences",
+      para: "Nurture employee overall development with customized learning pathways and recognition badges.",
     },
     {
       id: 3,
       img: meet,
       heading: "Meet",
-      para: "Fuel growth one lesson at a time.",
+      para: "Conduct agenda-based meetings, set milestones, and track team goals effortlessly.",
     },
     {
       id: 4,
-      img: market,
-      heading: "Market",
-      para: "Fuel growth one lesson at a time.",
+      img: ai,
+      heading: "AI",
+      para: "Streamline recruitment with insights into candidate behavior and confidence levels.",
+    },
+    {
+      id: 5,
+      img: health,
+      heading: "Health",
+      para: "Foster a culture of wellness with personalized health support and curated resources.",
     },
   ];
   return (
@@ -86,7 +95,10 @@ const HomeMiddlePageComp = () => {
                 <p className="text-center text-[16px] font-[400] text-[#000000] leading-[19.41px]">
                   {item?.para}
                 </p>
-                <button className="w-[180px] h-[42px] bg-[#FF7301] text-[16px] leading-[600] text-[#FFFFFF] flex items-center justify-center gap-1 rounded">
+                <button
+                  onClick={() => navigate("/solution")}
+                  className="w-[180px] h-[42px] bg-[#FF7301] text-[16px] leading-[600] text-[#FFFFFF] flex items-center justify-center gap-1 rounded"
+                >
                   Learn More
                   <span>
                     <GoArrowRight />

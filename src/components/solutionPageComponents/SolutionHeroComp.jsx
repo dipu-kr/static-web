@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import solutionheroimg from "../../assets/images/solutionheroimg.svg";
+import solutionHeroImg from "../../assets/images/solutionHeroImg.svg";
 import AOS from "aos";
 
 const SolutionHeroComp = () => {
@@ -14,25 +14,26 @@ const SolutionHeroComp = () => {
     <div className="w-full bg-[#ffffff]">
       <div className="w-full max-w-[1535px] mx-auto px-[20px] sm:px-[40px] lg:px-[100px] xl:px-[150px]">
         <div className="flex h-auto flex-col-reverse lg:flex-row gap-10 mb-[40px] lg:mb-[150px]">
-          <div
-            className="w-full lg:flex-1 mt-[30px] lg:mt-[142px]"
-            data-aos="zoom-in-up"
-          >
+          <div className="w-full lg:flex-1 mt-[30px] lg:mt-[100px]">
             <h1 className="text-[26px] lg:text-[50px] font-[600] leading-[30px] lg:leading-[53px]">
-              Real-Time ML Drives
+              Elevating Employee Engagement
             </h1>
-            <h1 className="text-[26px] lg:text-[50px] font-[600] leading-[30px] lg:leading-[53px]">
-              Real Value
+            <h1 className="text-[#FF7301] text-[26px] lg:text-[50px] font-[600] leading-[30px] lg:leading-[53px]">
+              Introducing Inimble
             </h1>
             <p className="text-[16px]  lg:text-[18px] font-[400] leading-[26px] lg:leading-[32px] mt-4">
-              Whether you’re already deploying real-time predictions or about
-              to, Tecton connects to leading infrastructure solutions and tools
-              to make your real- time ML journey as successful as possible.
+              In today's dynamic workplace landscape, enhancing employee
+              engagement and growth has become paramount for organizations
+              striving to stand out amongst evolving engagement challenges.
+              Recognizing the shifting needs of the modern workforce, Inimble
+              emerges as a beacon of innovation, offering a holistic solution
+              designed to enhance employee engagement, development, and overall
+              wellbeing.
             </p>
           </div>
-          <div className="w-full lg:flex-1 mt-[60px]" data-aos="zoom-in-up">
+          <div className="w-full lg:flex-1 mt-[30px] lg:mt-[80px]">
             <img
-              src={solutionheroimg}
+              src={solutionHeroImg}
               alt="Image"
               className="w-[100%] object-cover"
             />
